@@ -48,9 +48,10 @@ public final class HarmonizedSystemManager extends GlobalSingleton
     HarmonizedSystemReader.readItems (new ClassPathResource ("codelists/harmonized_system.xml"),
                                       new INonThrowingRunnableWithParameter <HarmonizedSystemItem> ()
                                       {
-                                        public void run (@Nonnull final HarmonizedSystemItem aItem)
+                                        public void run (@Nullable final HarmonizedSystemItem aItem)
                                         {
-                                          m_aMap.put (aItem.getCode (), aItem);
+                                          if (aItem != null)
+                                            m_aMap.put (aItem.getCode (), aItem);
                                         }
                                       });
   }

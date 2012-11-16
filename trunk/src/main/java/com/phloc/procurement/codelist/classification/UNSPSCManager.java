@@ -48,9 +48,10 @@ public final class UNSPSCManager extends GlobalSingleton
     UNSPSCReader.readItems (new ClassPathResource ("codelists/unspsc.xml"),
                             new INonThrowingRunnableWithParameter <UNSPSCItem> ()
                             {
-                              public void run (@Nonnull final UNSPSCItem aItem)
+                              public void run (@Nullable final UNSPSCItem aItem)
                               {
-                                m_aMap.put (aItem.getCode (), aItem);
+                                if (aItem != null)
+                                  m_aMap.put (aItem.getCode (), aItem);
                               }
                             });
   }
