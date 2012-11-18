@@ -18,6 +18,7 @@
 package com.phloc.procurement.config;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import com.phloc.commons.annotations.IsSPIImplementation;
 import com.phloc.commons.typeconvert.ITypeConverter;
@@ -34,14 +35,16 @@ public class ProcurementTypeConverterRegistrar implements ITypeConverterRegistra
     // implementation class
     aRegistry.registerTypeConverter (EntityIDScheme.class, String.class, new ITypeConverter ()
     {
-      public String convert (final Object aSource)
+      @Nonnull
+      public String convert (@Nonnull final Object aSource)
       {
         return ((EntityIDScheme) aSource).getID ();
       }
     });
     aRegistry.registerTypeConverter (String.class, EntityIDScheme.class, new ITypeConverter ()
     {
-      public EntityIDScheme convert (final Object aSource)
+      @Nullable
+      public EntityIDScheme convert (@Nonnull final Object aSource)
       {
         return EntityIDSchemeManager.getInstance ().getIDSchemeFromID ((String) aSource);
       }
