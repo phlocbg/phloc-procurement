@@ -39,16 +39,20 @@ public final class ProcResourceAttachmentTest
     // Explicit title
     ProcResourceAttachment aPFSA = new ProcResourceAttachment ("any",
                                                                "my title",
+                                                               CMimeType.TEXT_PLAIN,
                                                                PDTFactory.getCurrentDateTime (),
-                                                               new ClassPathResource ("test.txt"));
+                                                               new ClassPathResource ("test.wiki"));
     assertEquals ("any", aPFSA.getID ());
     assertEquals ("my title", aPFSA.getTitle ());
     assertEquals (CMimeType.TEXT_PLAIN, aPFSA.getMIMEType ());
     assertEquals ("SGFsbG8gV2VsdCE=", aPFSA.getBase64Encoded ());
 
-    // Use file name as title; no MIME type
-    aPFSA = new ProcResourceAttachment ("any", PDTFactory.getCurrentDateTime (), new ClassPathResource ("test.txt"));
-    assertTrue (aPFSA.getTitle ().endsWith ("test.txt"));
+    // Use file name as title
+    aPFSA = new ProcResourceAttachment ("any",
+                                        CMimeType.TEXT_PLAIN,
+                                        PDTFactory.getCurrentDateTime (),
+                                        new ClassPathResource ("test.wiki"));
+    assertTrue (aPFSA.getTitle ().endsWith ("test.wiki"));
     assertEquals (CMimeType.TEXT_PLAIN, aPFSA.getMIMEType ());
     assertEquals ("SGFsbG8gV2VsdCE=", aPFSA.getBase64Encoded ());
   }

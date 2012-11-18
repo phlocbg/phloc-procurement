@@ -52,6 +52,14 @@ public class ProcResourceAttachment extends AbstractProcAttachment
   }
 
   public ProcResourceAttachment (@Nonnull @Nonempty final String sID,
+                                 @Nullable final IMimeType aMIMEType,
+                                 @Nonnull final DateTime aUploadDT,
+                                 @Nonnull final IReadableResource aRes)
+  {
+    this (sID, aRes.getResourceID (), aMIMEType, aUploadDT, aRes);
+  }
+
+  public ProcResourceAttachment (@Nonnull @Nonempty final String sID,
                                  @Nonnull @Nonempty final String sTitle,
                                  @Nonnull final DateTime aUploadDT,
                                  @Nonnull final IReadableResource aRes)
