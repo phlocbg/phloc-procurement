@@ -78,6 +78,9 @@ import com.phloc.procurement.party.ProcMasterData;
 @Immutable
 public final class UBL20InvoiceSerializer extends AbstractUBL20Serializer
 {
+  private UBL20InvoiceSerializer ()
+  {}
+
   @Nonnull
   public static InvoiceType writeInvoice (@Nonnull final ProcMasterData aSender,
                                           @Nonnull final ProcInvoiceOutgoing aInvoiceO,

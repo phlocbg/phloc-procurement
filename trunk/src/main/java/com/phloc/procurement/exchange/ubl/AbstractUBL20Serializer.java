@@ -143,6 +143,10 @@ abstract class AbstractUBL20Serializer
 
     public void increment (@Nonnull final BigDecimal aTaxableAmount, @Nonnull final BigDecimal aTaxAmount)
     {
+      if (aTaxableAmount == null)
+        throw new NullPointerException ("taxableAmount");
+      if (aTaxAmount == null)
+        throw new NullPointerException ("taxAmount");
       m_aTaxableAmount = m_aTaxableAmount.add (aTaxableAmount);
       m_aTaxAmount = m_aTaxAmount.add (aTaxAmount);
     }
@@ -325,7 +329,8 @@ abstract class AbstractUBL20Serializer
     return aTaxAmount;
   }
 
-  protected static TaxSchemeType createTaxScheme (final ETaxTypeUN5153 eTaxType)
+  @Nonnull
+  protected static TaxSchemeType createTaxScheme (@Nonnull final ETaxTypeUN5153 eTaxType)
   {
     final TaxSchemeType aTaxScheme = new TaxSchemeType ();
     final IDType aTaxSchemeID = new IDType ();
@@ -341,7 +346,7 @@ abstract class AbstractUBL20Serializer
                                                       final BigDecimal aTaxbableAmountValue,
                                                       final BigDecimal aTaxAmountValue,
                                                       final ETaxTypeUN5153 eTaxType,
-                                                      final ETaxCategoryUN5305 eTaxCategory,
+                                                      @Nonnull final ETaxCategoryUN5305 eTaxCategory,
                                                       final BigDecimal aPercentageValue)
   {
     final TaxSubtotalType aTaxSubtotal = new TaxSubtotalType ();
