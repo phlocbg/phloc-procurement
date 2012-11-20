@@ -45,6 +45,7 @@ import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
 import com.phloc.db.jpa.converter.JPAJodaLocalDateConverter;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.masterdata.currency.CurrencyValue;
 import com.phloc.masterdata.currency.ICurrencyValue;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
@@ -107,9 +108,10 @@ public final class ProcOrder extends AbstractProcDeletableObject implements IPro
   @Nonnull
   public EChange setOrderNumber (@Nullable final String sOrderNumber)
   {
-    if (EqualsUtils.equals (sOrderNumber, m_sOrderNumber))
+    final String sRealOrderNumber = MasterdataUtils.getEnsuredLength (sOrderNumber, LENGTH_ORDER_NUMBER);
+    if (EqualsUtils.equals (sRealOrderNumber, m_sOrderNumber))
       return EChange.UNCHANGED;
-    m_sOrderNumber = sOrderNumber;
+    m_sOrderNumber = sRealOrderNumber;
     return EChange.CHANGED;
   }
 

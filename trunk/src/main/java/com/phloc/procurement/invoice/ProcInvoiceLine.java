@@ -38,6 +38,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
 import com.phloc.masterdata.price.IReadonlyPrice;
 import com.phloc.masterdata.price.Price;
@@ -113,9 +114,10 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   @Nonnull
   public EChange setOrderItemID (final String sOrderItemID)
   {
-    if (EqualsUtils.equals (sOrderItemID, m_sOrderItemID))
+    final String sRealOrderItemID = MasterdataUtils.getEnsuredLength (sOrderItemID, LENGTH_ORDERITEM);
+    if (EqualsUtils.equals (sRealOrderItemID, m_sOrderItemID))
       return EChange.UNCHANGED;
-    m_sOrderItemID = sOrderItemID;
+    m_sOrderItemID = sRealOrderItemID;
     return EChange.CHANGED;
   }
 
@@ -129,9 +131,10 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   @Nonnull
   public EChange setLineID (@Nullable final String sLineID)
   {
-    if (EqualsUtils.equals (sLineID, m_sLineID))
+    final String sRealLineID = MasterdataUtils.getEnsuredLength (sLineID, LENGTH_LINEID);
+    if (EqualsUtils.equals (sRealLineID, m_sLineID))
       return EChange.UNCHANGED;
-    m_sLineID = sLineID;
+    m_sLineID = sRealLineID;
     return EChange.CHANGED;
   }
 
@@ -161,9 +164,10 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   @Nonnull
   public EChange setCommodityID (@Nullable final String sCommodityID)
   {
-    if (EqualsUtils.equals (sCommodityID, m_sCommodityID))
+    final String sRealCommodityID = MasterdataUtils.getEnsuredLength (sCommodityID, LENGTH_COMMODITY_ID);
+    if (EqualsUtils.equals (sRealCommodityID, m_sCommodityID))
       return EChange.UNCHANGED;
-    m_sCommodityID = sCommodityID;
+    m_sCommodityID = sRealCommodityID;
     return EChange.CHANGED;
   }
 
@@ -177,9 +181,10 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   @Nonnull
   public EChange setDescription (@Nullable final String sDescription)
   {
-    if (EqualsUtils.equals (sDescription, m_sDescription))
+    final String sRealDescription = MasterdataUtils.getEnsuredLength (sDescription, LENGTH_DESCRIPTION);
+    if (EqualsUtils.equals (sRealDescription, m_sDescription))
       return EChange.UNCHANGED;
-    m_sDescription = sDescription;
+    m_sDescription = sRealDescription;
     return EChange.CHANGED;
   }
 
@@ -252,9 +257,10 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   @Nonnull
   public EChange setRemark (@Nullable final String sRemark)
   {
-    if (EqualsUtils.equals (sRemark, m_sRemark))
+    final String sRealRemark = MasterdataUtils.getEnsuredLength (sRemark, LENGTH_REMARK);
+    if (EqualsUtils.equals (sRealRemark, m_sRemark))
       return EChange.UNCHANGED;
-    m_sRemark = sRemark;
+    m_sRemark = sRealRemark;
     return EChange.CHANGED;
   }
 

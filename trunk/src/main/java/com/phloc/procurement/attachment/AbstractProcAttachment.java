@@ -19,6 +19,7 @@ package com.phloc.procurement.attachment;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import javax.annotation.concurrent.NotThreadSafe;
 
 import org.joda.time.DateTime;
 
@@ -35,6 +36,7 @@ import com.phloc.commons.string.ToStringGenerator;
  * 
  * @author philip
  */
+@NotThreadSafe
 public abstract class AbstractProcAttachment implements IProcAttachment
 {
   private final String m_sID;

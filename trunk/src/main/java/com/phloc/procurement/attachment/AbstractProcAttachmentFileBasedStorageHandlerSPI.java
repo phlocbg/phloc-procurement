@@ -53,7 +53,6 @@ import com.phloc.commons.mime.MimeType;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.StringHelper;
 import com.phloc.commons.string.StringParser;
-import com.phloc.commons.xml.serialize.XMLWriterSettings;
 import com.phloc.datetime.PDTFactory;
 
 /**
@@ -147,8 +146,7 @@ public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implement
       throw new IllegalStateException ("MetaData of " + aBaseDir + " could not be read");
     final IMicroElement eRoot = aMetaData.getDocumentElement ();
     final String sUploadDT = eRoot.getAttribute (ATTR_UPLOADDT);
-    final DateTime aUploadDT = sUploadDT == null
-                                                ? PDTFactory.getCurrentDateTime ()
+    final DateTime aUploadDT = sUploadDT == null ? PDTFactory.getCurrentDateTime ()
                                                 : PDTFactory.createDateTimeFromMillis (StringParser.parseLong (sUploadDT,
                                                                                                                0));
     final IMicroElement eTitle = eRoot.getFirstChildElement (ELEMENT_TITLE);
@@ -237,7 +235,7 @@ public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implement
       eRoot.appendElement (ELEMENT_MIMETYPE).appendText (aAttachment.getMIMEType ().getAsString ());
 
     // Save to file
-    MicroWriter.writeToStream (aDoc, FileUtils.getOutputStream (aFile), XMLWriterSettings.DEFAULT_XML_SETTINGS);
+    MicroWriter.writeToStream (aDoc, FileUtils.getOutputStream (aFile));
   }
 
   @Nonnull
@@ -257,7 +255,7 @@ public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implement
       final File aAttachmentBaseDir = new File (m_aBaseDir, sAttachmentID);
       final FileIOError eError = FileOperations.createDir (aAttachmentBaseDir);
       if (eError.isFailure ())
-        throw new IllegalStateException ("Failed to create directory " + aAttachmentBaseDir + ": " + eError);
+        throw new IllegalStateException ("Failed to create directory " + aAttachmentBaseDir + ": " + eError.toString ());
 
       // Persist the main items
       final IReadableResource aContentRes = _persistAttachmentContent (aAttachmentBaseDir, aAttachment);
@@ -295,7 +293,10 @@ public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implement
       final File aAttachmentBaseDir = new File (m_aBaseDir, sAttachmentID);
       final FileIOError eError = FileOperations.deleteDirRecursive (aAttachmentBaseDir);
       if (eError.isFailure ())
-        throw new IllegalStateException ("Failed to deleted directory " + aAttachmentBaseDir);
+        throw new IllegalStateException ("Failed to deleted directory " +
+                                         aAttachmentBaseDir +
+                                         ": " +
+                                         eError.toString ());
 
       // Remove from TOC and persist TOC
       m_aAttachments.remove (sAttachmentID);

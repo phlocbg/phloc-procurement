@@ -20,6 +20,7 @@ package com.phloc.procurement.attachment;
 import java.io.InputStream;
 import java.util.Arrays;
 
+import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -66,6 +67,7 @@ public final class ProcInMemoryAttachment extends AbstractProcAttachment
     return false;
   }
 
+  @Nonnegative
   public int getSize ()
   {
     return m_aData.length;

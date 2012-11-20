@@ -34,6 +34,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.procurement.domain.AbstractProcObject;
 import com.phloc.procurement.domain.CProcLengthConstraints;
 
@@ -99,11 +100,12 @@ public final class ProcCustomerPaymentTerm extends AbstractProcObject implements
   }
 
   @Nonnull
-  public EChange setDescription (@Nonnull final String sDescription)
+  public EChange setDescription (@Nullable final String sDescription)
   {
-    if (EqualsUtils.equals (m_sDescription, sDescription))
+    final String sRealDescription = MasterdataUtils.getEnsuredLength (sDescription, LENGTH_DESCRIPTION);
+    if (EqualsUtils.equals (m_sDescription, sRealDescription))
       return EChange.UNCHANGED;
-    m_sDescription = sDescription;
+    m_sDescription = sRealDescription;
     return EChange.CHANGED;
   }
 

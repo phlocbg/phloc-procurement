@@ -36,6 +36,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
 import com.phloc.masterdata.price.IReadonlyPrice;
 import com.phloc.masterdata.price.Price;
@@ -100,9 +101,10 @@ public final class ProcOrderItem extends AbstractProcObject implements IProcOrde
   @Nonnull
   public EChange setDescription (@Nullable final String sDescription)
   {
-    if (EqualsUtils.equals (m_sDescription, sDescription))
+    final String sRealDescription = MasterdataUtils.getEnsuredLength (sDescription, LENGTH_DESCRIPTION);
+    if (EqualsUtils.equals (m_sDescription, sRealDescription))
       return EChange.UNCHANGED;
-    m_sDescription = sDescription;
+    m_sDescription = sRealDescription;
     return EChange.CHANGED;
   }
 
@@ -116,9 +118,10 @@ public final class ProcOrderItem extends AbstractProcObject implements IProcOrde
   @Nonnull
   public EChange setNote (@Nullable final String sNote)
   {
-    if (EqualsUtils.equals (m_sNote, sNote))
+    final String sRealNote = MasterdataUtils.getEnsuredLength (sNote, LENGTH_NOTE);
+    if (EqualsUtils.equals (m_sNote, sRealNote))
       return EChange.UNCHANGED;
-    m_sNote = sNote;
+    m_sNote = sRealNote;
     return EChange.CHANGED;
   }
 
@@ -191,9 +194,10 @@ public final class ProcOrderItem extends AbstractProcObject implements IProcOrde
   @Nonnull
   public EChange setCommodityID (@Nullable final String sCommodityID)
   {
-    if (EqualsUtils.equals (sCommodityID, m_sCommodityID))
+    final String sRealCommodityID = MasterdataUtils.getEnsuredLength (sCommodityID, LENGTH_NOTE);
+    if (EqualsUtils.equals (sRealCommodityID, m_sCommodityID))
       return EChange.UNCHANGED;
-    m_sCommodityID = sCommodityID;
+    m_sCommodityID = sRealCommodityID;
     return EChange.CHANGED;
   }
 
