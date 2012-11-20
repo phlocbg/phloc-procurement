@@ -74,6 +74,12 @@ public interface IProcOrder extends IProcDeletableObject, IHasProcAttachment
   EIncoterm getIncoterm ();
 
   /**
+   * @return ID of the Incoterms delivery terms.
+   */
+  @Nullable
+  String getIncotermID ();
+
+  /**
    * @return The attachments of this object. May be <code>null</code>.
    */
   @Nullable
