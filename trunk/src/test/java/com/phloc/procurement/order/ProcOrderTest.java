@@ -21,7 +21,11 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import com.phloc.commons.charset.CCharset;
+import com.phloc.commons.collections.ContainerHelper;
+import com.phloc.commons.mime.CMimeType;
 import com.phloc.commons.mock.PhlocTestUtils;
+import com.phloc.procurement.attachment.ProcInMemoryAttachment;
 import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 
 /**
@@ -36,6 +40,12 @@ public final class ProcOrderTest extends AbstractExchangeTestCase
   {
     final ProcOrder aOrder = createOrder ();
     assertNotNull (aOrder);
+    final ProcOrderAttachment aAttach1 = new ProcOrderAttachment (aOrder,
+                                                                  new ProcInMemoryAttachment ("attach1",
+                                                                                              "Titel",
+                                                                                              CMimeType.TEXT_PLAIN,
+                                                                                              "abc".getBytes (CCharset.CHARSET_ISO_8859_1_OBJ)));
+    aOrder.setAttachments (ContainerHelper.newList (aAttach1));
     PhlocTestUtils.testMicroTypeConversion (aOrder);
   }
 }
