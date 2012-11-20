@@ -31,6 +31,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.eclipse.persistence.annotations.Convert;
 import org.eclipse.persistence.annotations.Converter;
@@ -202,6 +203,13 @@ public final class ProcOrder extends AbstractProcDeletableObject implements IPro
     return m_eIncoterm;
   }
 
+  @Transient
+  @Nullable
+  public String getIncotermID ()
+  {
+    return m_eIncoterm == null ? null : m_eIncoterm.getID ();
+  }
+
   @Nonnull
   public EChange setIncoterm (@Nullable final EIncoterm eIncoterm)
   {
@@ -251,6 +259,7 @@ public final class ProcOrder extends AbstractProcDeletableObject implements IPro
     return null;
   }
 
+  @Nullable
   private static ICurrencyValue _addOrCreate (@Nullable final ICurrencyValue aBaseValue,
                                               @Nullable final IReadonlyCurrencyValue aAddValue)
   {

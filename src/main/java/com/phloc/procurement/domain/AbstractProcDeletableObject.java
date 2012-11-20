@@ -31,9 +31,10 @@ import com.phloc.commons.string.ToStringGenerator;
 @Access (value = AccessType.PROPERTY)
 public abstract class AbstractProcDeletableObject extends AbstractProcObject implements IProcDeletableObject
 {
+  public static final boolean DEFAULT_DELETED = false;
   public static final String FIELD_DELETED = "deleted";
 
-  private boolean m_bDeleted = false;
+  private boolean m_bDeleted = DEFAULT_DELETED;
 
   @Column (name = FIELD_DELETED)
   public final boolean isDeleted ()

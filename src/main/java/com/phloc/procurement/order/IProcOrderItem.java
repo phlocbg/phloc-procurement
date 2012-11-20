@@ -44,6 +44,12 @@ public interface IProcOrderItem extends IProcObject
   ICommodityScheme getCommodityScheme ();
 
   /**
+   * @return The ID of the commodity scheme for this order line.
+   */
+  @Nullable
+  String getCommoditySchemeID ();
+
+  /**
    * @return The ID within the selected commodity scheme.
    */
   @Nullable

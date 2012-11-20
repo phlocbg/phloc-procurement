@@ -175,6 +175,13 @@ public final class ProcOrderItem extends AbstractProcObject implements IProcOrde
     return m_aCommodityScheme;
   }
 
+  @Transient
+  @Nullable
+  public String getCommoditySchemeID ()
+  {
+    return m_aCommodityScheme == null ? null : m_aCommodityScheme.getID ();
+  }
+
   @Nonnull
   public EChange setCommodityScheme (@Nullable final ECommodityScheme aCommodityScheme)
   {
