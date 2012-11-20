@@ -30,6 +30,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.procurement.domain.CProcLengthConstraints;
 
 /**
@@ -87,9 +88,10 @@ public final class ProcMasterData extends AbstractProcParty implements IProcMast
   @Nonnull
   public EChange setEmail (@Nullable final String sEmail)
   {
-    if (EqualsUtils.equals (sEmail, m_sEmail))
+    final String sRealEmail = MasterdataUtils.getEnsuredLength (sEmail, LENGTH_EMAIL);
+    if (EqualsUtils.equals (sRealEmail, m_sEmail))
       return EChange.UNCHANGED;
-    m_sEmail = sEmail;
+    m_sEmail = sRealEmail;
     return EChange.CHANGED;
   }
 
@@ -103,9 +105,10 @@ public final class ProcMasterData extends AbstractProcParty implements IProcMast
   @Nonnull
   public EChange setTelephone (@Nullable final String sTelephone)
   {
-    if (EqualsUtils.equals (sTelephone, m_sTelephone))
+    final String sRealTelephone = MasterdataUtils.getEnsuredLength (sTelephone, LENGTH_TELEPHONE);
+    if (EqualsUtils.equals (sRealTelephone, m_sTelephone))
       return EChange.UNCHANGED;
-    m_sTelephone = sTelephone;
+    m_sTelephone = sRealTelephone;
     return EChange.CHANGED;
   }
 
@@ -119,9 +122,10 @@ public final class ProcMasterData extends AbstractProcParty implements IProcMast
   @Nonnull
   public EChange setFirstName (@Nullable final String sFirstName)
   {
-    if (EqualsUtils.equals (sFirstName, m_sFirstName))
+    final String sRealFirstName = MasterdataUtils.getEnsuredLength (sFirstName, LENGTH_FIRSTNAME);
+    if (EqualsUtils.equals (sRealFirstName, m_sFirstName))
       return EChange.UNCHANGED;
-    m_sFirstName = sFirstName;
+    m_sFirstName = sRealFirstName;
     return EChange.CHANGED;
   }
 
@@ -135,9 +139,10 @@ public final class ProcMasterData extends AbstractProcParty implements IProcMast
   @Nonnull
   public EChange setLastName (@Nullable final String sLastName)
   {
-    if (EqualsUtils.equals (sLastName, m_sLastName))
+    final String sRealLastName = MasterdataUtils.getEnsuredLength (sLastName, LENGTH_LASTNAME);
+    if (EqualsUtils.equals (sRealLastName, m_sLastName))
       return EChange.UNCHANGED;
-    m_sLastName = sLastName;
+    m_sLastName = sRealLastName;
     return EChange.CHANGED;
   }
 

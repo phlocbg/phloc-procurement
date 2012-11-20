@@ -91,12 +91,13 @@ public class ProcResourceAttachment extends AbstractProcAttachment
     return true;
   }
 
+  @Nonnull
   public String getBase64Encoded ()
   {
     final Base64.InputStream aIS = new Base64.InputStream (getInputStream (), Base64.ENCODE);
     final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ();
     StreamUtils.copyInputStreamToOutputStreamAndCloseOS (aIS, aBAOS);
-    return aBAOS.getAsString (CCharset.CHARSET_ISO_8859_1);
+    return aBAOS.getAsString (CCharset.CHARSET_ISO_8859_1_OBJ);
   }
 
   @Override

@@ -33,6 +33,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.procurement.attachment.IProcAttachment;
 import com.phloc.procurement.domain.AbstractProcObject;
 import com.phloc.procurement.domain.CProcLengthConstraints;
@@ -93,9 +94,10 @@ public final class ProcOrderAttachment extends AbstractProcObject implements IPr
   @Nonnull
   public EChange setAttachmentID (final String sAttachmentID)
   {
-    if (EqualsUtils.equals (sAttachmentID, m_sAttachmentID))
+    final String sRealAttachmentID = MasterdataUtils.getEnsuredLength (sAttachmentID, LENGTH_ATTACHMENTID);
+    if (EqualsUtils.equals (sRealAttachmentID, m_sAttachmentID))
       return EChange.UNCHANGED;
-    m_sAttachmentID = sAttachmentID;
+    m_sAttachmentID = sRealAttachmentID;
     return EChange.CHANGED;
   }
 

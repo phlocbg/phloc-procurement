@@ -45,6 +45,7 @@ import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
 import com.phloc.db.jpa.converter.JPAJodaLocalDateConverter;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.masterdata.currency.CurrencyValue;
 import com.phloc.masterdata.currency.ICurrencyValue;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
@@ -109,9 +110,10 @@ public final class ProcInvoice extends AbstractProcDeletableObject implements IP
   @Nonnull
   public EChange setInvoiceNumber (@Nullable final String sInvoiceNumber)
   {
-    if (EqualsUtils.equals (m_sInvoiceNumber, sInvoiceNumber))
+    final String sRealInvoiceNumber = MasterdataUtils.getEnsuredLength (sInvoiceNumber, LENGTH_INVOICENUMBER);
+    if (EqualsUtils.equals (m_sInvoiceNumber, sRealInvoiceNumber))
       return EChange.UNCHANGED;
-    m_sInvoiceNumber = sInvoiceNumber;
+    m_sInvoiceNumber = sRealInvoiceNumber;
     return EChange.CHANGED;
   }
 
@@ -125,9 +127,10 @@ public final class ProcInvoice extends AbstractProcDeletableObject implements IP
   @Nonnull
   public EChange setInvoiceNote (@Nullable final String sInvoiceNote)
   {
-    if (EqualsUtils.equals (m_sInvoiceNote, sInvoiceNote))
+    final String sRealInvoiceNote = MasterdataUtils.getEnsuredLength (sInvoiceNote, LENGTH_INVOICENOTE);
+    if (EqualsUtils.equals (m_sInvoiceNote, sRealInvoiceNote))
       return EChange.UNCHANGED;
-    m_sInvoiceNote = sInvoiceNote;
+    m_sInvoiceNote = sRealInvoiceNote;
     return EChange.CHANGED;
   }
 
