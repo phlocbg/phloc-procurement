@@ -33,9 +33,9 @@ public final class ProcOrderItemMicroTypeConverter implements IMicroTypeConverte
     final IProcOrderItem aValue = (IProcOrderItem) aObject;
     final IMicroElement aElement = new MicroElement (sNamespaceURI, sTagName);
     aElement.setAttribute (ATTR_ID, aValue.getID ());
-    if (StringHelper.hasNoText (aValue.getDescription ()))
+    if (StringHelper.hasText (aValue.getDescription ()))
       aElement.appendElement (sNamespaceURI, ELEMENT_DESCRIPTION).appendText (aValue.getDescription ());
-    if (StringHelper.hasNoText (aValue.getNote ()))
+    if (StringHelper.hasText (aValue.getNote ()))
       aElement.appendElement (sNamespaceURI, ELEMENT_NOTE).appendText (aValue.getNote ());
     aElement.setAttribute (ATTR_QUANTITY, aValue.getQuantity ());
     aElement.appendChild (MicroTypeConverter.convertToMicroElement (aValue.getUnitPrice (),
