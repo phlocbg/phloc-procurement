@@ -209,6 +209,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
     }).get ().longValue ();
   }
 
+  @Nonnull
   private TypedQuery <ProcOrderIncoming> _getQueryAll (final boolean bDeleted, final EProcState eState)
   {
     final StringBuilder aQueryString = new StringBuilder ("SELECT p FROM ProcOrderIncoming p WHERE p.order.deleted = :deleted");
@@ -223,6 +224,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
     return aQuery;
   }
 
+  @Nonnull
   private Query _getCountAll (final boolean bDeleted, final EProcState eState)
   {
     final StringBuilder aQueryString = new StringBuilder ("SELECT COUNT(p) FROM ProcOrderIncoming p WHERE p.order.deleted = :deleted");

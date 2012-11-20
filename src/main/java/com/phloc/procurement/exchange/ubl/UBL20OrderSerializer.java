@@ -77,6 +77,9 @@ import com.phloc.procurement.party.ProcSupplier;
 @Immutable
 public final class UBL20OrderSerializer extends AbstractUBL20Serializer
 {
+  private UBL20OrderSerializer ()
+  {}
+
   @Nonnull
   public static OrderType writeOrder (@Nonnull final ProcMasterData aSender,
                                       @Nonnull final ProcOrderOutgoing aOrderO,
