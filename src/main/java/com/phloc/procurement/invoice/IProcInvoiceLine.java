@@ -53,6 +53,12 @@ public interface IProcInvoiceLine extends IProcObject
   ICommodityScheme getCommodityScheme ();
 
   /**
+   * @return The ID of the commodity scheme for this invoice line.
+   */
+  @Nullable
+  String getCommoditySchemeID ();
+
+  /**
    * @return The ID within the selected commodity scheme.
    */
   @Nullable
@@ -71,6 +77,9 @@ public interface IProcInvoiceLine extends IProcObject
 
   @Nullable
   ETaxCategoryUN5305 getTaxCategory ();
+
+  @Nullable
+  String getTaxCategoryID ();
 
   @Nullable
   String getRemark ();
