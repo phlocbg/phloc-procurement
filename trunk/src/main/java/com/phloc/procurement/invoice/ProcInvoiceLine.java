@@ -145,6 +145,13 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
     return m_aCommodityScheme;
   }
 
+  @Transient
+  @Nullable
+  public String getCommoditySchemeID ()
+  {
+    return m_aCommodityScheme == null ? null : m_aCommodityScheme.getID ();
+  }
+
   @Nonnull
   public EChange setCommodityScheme (@Nullable final ECommodityScheme aCommodityScheme)
   {
@@ -236,6 +243,13 @@ public final class ProcInvoiceLine extends AbstractProcObject implements IProcIn
   public ETaxCategoryUN5305 getTaxCategory ()
   {
     return m_eTaxCategory;
+  }
+
+  @Transient
+  @Nullable
+  public String getTaxCategoryID ()
+  {
+    return m_eTaxCategory == null ? null : m_eTaxCategory.getID ();
   }
 
   @Nonnull

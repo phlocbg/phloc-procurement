@@ -24,6 +24,8 @@ import com.phloc.commons.microdom.convert.IMicroTypeConverterRegistrarSPI;
 import com.phloc.commons.microdom.convert.IMicroTypeConverterRegistry;
 import com.phloc.procurement.invoice.ProcInvoiceAttachment;
 import com.phloc.procurement.invoice.ProcInvoiceAttachmentMicroTypeConverter;
+import com.phloc.procurement.invoice.ProcInvoiceLine;
+import com.phloc.procurement.invoice.ProcInvoiceLineMicroTypeConverter;
 import com.phloc.procurement.order.ProcOrder;
 import com.phloc.procurement.order.ProcOrderAttachment;
 import com.phloc.procurement.order.ProcOrderAttachmentMicroTypeConverter;
@@ -38,6 +40,7 @@ public class ProcurementMicroTypeConverterRegistrar implements IMicroTypeConvert
   {
     aRegistry.registerMicroElementTypeConverter (ProcInvoiceAttachment.class,
                                                  new ProcInvoiceAttachmentMicroTypeConverter ());
+    aRegistry.registerMicroElementTypeConverter (ProcInvoiceLine.class, new ProcInvoiceLineMicroTypeConverter ());
     aRegistry.registerMicroElementTypeConverter (ProcOrderAttachment.class,
                                                  new ProcOrderAttachmentMicroTypeConverter ());
     aRegistry.registerMicroElementTypeConverter (ProcOrderItem.class, new ProcOrderItemMicroTypeConverter ());
