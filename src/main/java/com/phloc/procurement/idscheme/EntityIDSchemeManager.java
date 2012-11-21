@@ -26,6 +26,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import javax.annotation.concurrent.ThreadSafe;
 
 import com.phloc.commons.annotations.ReturnsMutableCopy;
 import com.phloc.commons.annotations.Translatable;
@@ -45,6 +46,7 @@ import com.phloc.validation.validator.string.StringRegExValidator;
  * 
  * @author philip
  */
+@ThreadSafe
 public final class EntityIDSchemeManager extends GlobalSingleton
 {
   @Translatable

@@ -71,8 +71,11 @@ public enum EProcState implements IHasID <String>, IHasDisplayText
     return m_sID;
   }
 
+  @Nullable
   public String getDisplayText (@Nonnull final Locale aContentLocale)
   {
+    if (m_aDislayName == null)
+      throw new IllegalStateException ("This state has no text!");
     return m_aDislayName.getDisplayText (aContentLocale);
   }
 
