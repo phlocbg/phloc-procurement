@@ -36,6 +36,7 @@ import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
 import com.phloc.db.jpa.converter.JPALocaleConverter;
+import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.procurement.domain.AbstractProcDeletableObject;
 import com.phloc.procurement.domain.CProcLengthConstraints;
 import com.phloc.procurement.idscheme.EntityIDScheme;
@@ -124,11 +125,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setEntityID (@Nonnull final String sEntityID)
+  public final EChange setEntityID (@Nullable final String sEntityID)
   {
-    if (EqualsUtils.equals (m_sEntityID, sEntityID))
+    final String sRealEntityID = MasterdataUtils.getEnsuredLength (sEntityID, LENGTH_IDVALUE);
+    if (EqualsUtils.equals (m_sEntityID, sRealEntityID))
       return EChange.UNCHANGED;
-    m_sEntityID = sEntityID;
+    m_sEntityID = sRealEntityID;
     return EChange.CHANGED;
   }
 
@@ -142,7 +144,8 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   @Nonnull
   public final EChange setEndpointID (@Nullable final String sEndpointID)
   {
-    if (EqualsUtils.equals (m_sEndpointID, sEndpointID))
+    final String sRealEndpointID = MasterdataUtils.getEnsuredLength (sEndpointID, LENGTH_ENDPOINTID);
+    if (EqualsUtils.equals (m_sEndpointID, sRealEndpointID))
       return EChange.UNCHANGED;
     m_sEndpointID = sEndpointID;
     return EChange.CHANGED;
@@ -156,11 +159,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setName (@Nonnull final String sName)
+  public final EChange setName (@Nullable final String sName)
   {
-    if (EqualsUtils.equals (m_sName, sName))
+    final String sRealName = MasterdataUtils.getEnsuredLength (sName, LENGTH_NAME);
+    if (EqualsUtils.equals (m_sName, sRealName))
       return EChange.UNCHANGED;
-    m_sName = sName;
+    m_sName = sRealName;
     return EChange.CHANGED;
   }
 
@@ -172,11 +176,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setStreet (@Nonnull final String sStreet)
+  public final EChange setStreet (@Nullable final String sStreet)
   {
-    if (EqualsUtils.equals (m_sStreet, sStreet))
+    final String sRealStreet = MasterdataUtils.getEnsuredLength (sStreet, LENGTH_STREET);
+    if (EqualsUtils.equals (m_sStreet, sRealStreet))
       return EChange.UNCHANGED;
-    m_sStreet = sStreet;
+    m_sStreet = sRealStreet;
     return EChange.CHANGED;
   }
 
@@ -188,11 +193,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setBuildingNumber (@Nonnull final String sBuildingNumber)
+  public final EChange setBuildingNumber (@Nullable final String sBuildingNumber)
   {
-    if (EqualsUtils.equals (m_sBuildingNumber, sBuildingNumber))
+    final String sRealBuildingNumber = MasterdataUtils.getEnsuredLength (sBuildingNumber, LENGTH_BUILDINGNUMBER);
+    if (EqualsUtils.equals (m_sBuildingNumber, sRealBuildingNumber))
       return EChange.UNCHANGED;
-    m_sBuildingNumber = sBuildingNumber;
+    m_sBuildingNumber = sRealBuildingNumber;
     return EChange.CHANGED;
   }
 
@@ -204,11 +210,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setPostbox (@Nonnull final String sPostbox)
+  public final EChange setPostbox (@Nullable final String sPostbox)
   {
-    if (EqualsUtils.equals (m_sPostbox, sPostbox))
+    final String sRealPostbox = MasterdataUtils.getEnsuredLength (sPostbox, LENGTH_POSTBOX);
+    if (EqualsUtils.equals (m_sPostbox, sRealPostbox))
       return EChange.UNCHANGED;
-    m_sPostbox = sPostbox;
+    m_sPostbox = sRealPostbox;
     return EChange.CHANGED;
   }
 
@@ -220,11 +227,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setZipCode (@Nonnull final String sZipCode)
+  public final EChange setZipCode (@Nullable final String sZipCode)
   {
-    if (EqualsUtils.equals (m_sZipCode, sZipCode))
+    final String sRealZipCode = MasterdataUtils.getEnsuredLength (sZipCode, LENGTH_ZIPCODE);
+    if (EqualsUtils.equals (m_sZipCode, sRealZipCode))
       return EChange.UNCHANGED;
-    m_sZipCode = sZipCode;
+    m_sZipCode = sRealZipCode;
     return EChange.CHANGED;
   }
 
@@ -236,11 +244,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setCity (@Nonnull final String sCity)
+  public final EChange setCity (@Nullable final String sCity)
   {
-    if (EqualsUtils.equals (m_sCity, sCity))
+    final String sRealCity = MasterdataUtils.getEnsuredLength (sCity, LENGTH_CITY);
+    if (EqualsUtils.equals (m_sCity, sRealCity))
       return EChange.UNCHANGED;
-    m_sCity = sCity;
+    m_sCity = sRealCity;
     return EChange.CHANGED;
   }
 
@@ -254,7 +263,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setCountry (@Nonnull final Locale aCountry)
+  public final EChange setCountry (@Nullable final Locale aCountry)
   {
     if (EqualsUtils.equals (m_aCountry, aCountry))
       return EChange.UNCHANGED;
@@ -270,11 +279,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setRegistrationName (@Nonnull final String sRegistrationName)
+  public final EChange setRegistrationName (@Nullable final String sRegistrationName)
   {
-    if (EqualsUtils.equals (m_sRegistrationName, sRegistrationName))
+    final String sRealRegistrationName = MasterdataUtils.getEnsuredLength (sRegistrationName, LENGTH_REGISTRATIONNAME);
+    if (EqualsUtils.equals (m_sRegistrationName, sRealRegistrationName))
       return EChange.UNCHANGED;
-    m_sRegistrationName = sRegistrationName;
+    m_sRegistrationName = sRealRegistrationName;
     return EChange.CHANGED;
   }
 
@@ -286,11 +296,13 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setCompanyRegistrationNumber (@Nonnull final String sCompanyRegistrationNumber)
+  public final EChange setCompanyRegistrationNumber (@Nullable final String sCompanyRegistrationNumber)
   {
-    if (EqualsUtils.equals (m_sCompanyRegistrationNumber, sCompanyRegistrationNumber))
+    final String sRealCompanyRegistrationNumber = MasterdataUtils.getEnsuredLength (sCompanyRegistrationNumber,
+                                                                                    LENGTH_REGISTRATIONNUMBER);
+    if (EqualsUtils.equals (m_sCompanyRegistrationNumber, sRealCompanyRegistrationNumber))
       return EChange.UNCHANGED;
-    m_sCompanyRegistrationNumber = sCompanyRegistrationNumber;
+    m_sCompanyRegistrationNumber = sRealCompanyRegistrationNumber;
     return EChange.CHANGED;
   }
 
@@ -302,11 +314,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setVATIN (@Nonnull final String sVATID)
+  public final EChange setVATIN (@Nullable final String sVATID)
   {
-    if (EqualsUtils.equals (m_sVATIN, sVATID))
+    final String sRealVATID = MasterdataUtils.getEnsuredLength (sVATID, LENGTH_VATIN);
+    if (EqualsUtils.equals (m_sVATIN, sRealVATID))
       return EChange.UNCHANGED;
-    m_sVATIN = sVATID;
+    m_sVATIN = sRealVATID;
     return EChange.CHANGED;
   }
 
@@ -318,11 +331,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setBIC (@Nonnull final String sBIC)
+  public final EChange setBIC (@Nullable final String sBIC)
   {
-    if (EqualsUtils.equals (m_sBIC, sBIC))
+    final String sRealBIC = MasterdataUtils.getEnsuredLength (sBIC, LENGTH_BIC);
+    if (EqualsUtils.equals (m_sBIC, sRealBIC))
       return EChange.UNCHANGED;
-    m_sBIC = sBIC;
+    m_sBIC = sRealBIC;
     return EChange.CHANGED;
   }
 
@@ -336,9 +350,10 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   @Nonnull
   public final EChange setIBAN (@Nonnull final String sIBAN)
   {
-    if (EqualsUtils.equals (m_sIBAN, sIBAN))
+    final String sRealIBAN = MasterdataUtils.getEnsuredLength (sIBAN, LENGTH_IBAN);
+    if (EqualsUtils.equals (m_sIBAN, sRealIBAN))
       return EChange.UNCHANGED;
-    m_sIBAN = sIBAN;
+    m_sIBAN = sRealIBAN;
     return EChange.CHANGED;
   }
 
