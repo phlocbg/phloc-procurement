@@ -32,33 +32,64 @@ import com.phloc.procurement.idscheme.IEntityIDScheme;
  */
 public interface IProcParty extends IProcDeletableObject, IHasCountry
 {
+  /**
+   * @return The entity ID scheme to be used (e.g. GLN or IBAN). May be
+   *         <code>null</code>.
+   */
   @Nullable
   IEntityIDScheme getEntityIDScheme ();
 
+  /**
+   * @return The ID matching the specified ID scheme.
+   */
   @Nullable
   String getEntityID ();
 
+  /**
+   * @return The endpoint ID for document exchange. May be a URL or sthg. else.
+   */
   @Nullable
   String getEndpointID ();
 
+  /**
+   * @return The name of the person or company.
+   */
   @Nullable
   String getName ();
 
+  /**
+   * @return The street where the person resides.
+   */
   @Nullable
   String getStreet ();
 
+  /**
+   * @return The building number to be used.
+   */
   @Nullable
   String getBuildingNumber ();
 
+  /**
+   * @return The post box to be used.
+   */
   @Nullable
   String getPostbox ();
 
+  /**
+   * @return The ZIP code of the city.
+   */
   @Nullable
   String getZipCode ();
 
+  /**
+   * @return The name of the city.
+   */
   @Nullable
   String getCity ();
 
+  /**
+   * @return The country the person lives in.
+   */
   @Nullable
   Locale getCountry ();
 
@@ -68,12 +99,21 @@ public interface IProcParty extends IProcDeletableObject, IHasCountry
   @Nullable
   String getCompanyRegistrationNumber ();
 
+  /**
+   * @return The VAT identification number
+   */
   @Nullable
   String getVATIN ();
 
+  /**
+   * @return Bank account BIC data.
+   */
   @Nullable
   String getBIC ();
 
+  /**
+   * @return Bank account IBAN data.
+   */
   @Nullable
   String getIBAN ();
 }

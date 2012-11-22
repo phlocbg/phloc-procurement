@@ -25,7 +25,9 @@ import com.phloc.commons.name.IHasDisplayText;
 import com.phloc.validation.validator.IStringValidator;
 
 /**
- * Interface for a single entity ID scheme
+ * Interface for a single entity ID scheme. It has an ID, a locale dependent
+ * display text, a locale independent short name and a validator to validate
+ * values.
  * 
  * @author philip
  */
