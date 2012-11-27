@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.phloc</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>21.1</version>
+    <version>22</version>
     <relativePath>../phloc-parent-pom/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -65,7 +65,7 @@
     <dependency>
       <groupId>com.phloc</groupId>
       <artifactId>phloc-commons</artifactId>
-      <version>3.9.2-SNAPSHOT</version>
+      <version>3.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.phloc</groupId>
