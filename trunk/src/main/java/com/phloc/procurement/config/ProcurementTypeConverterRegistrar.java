@@ -27,6 +27,12 @@ import com.phloc.commons.typeconvert.ITypeConverterRegistry;
 import com.phloc.procurement.idscheme.EntityIDScheme;
 import com.phloc.procurement.idscheme.EntityIDSchemeManager;
 
+/**
+ * This is the SPI implementation of the type converter registry for this
+ * project.
+ * 
+ * @author philip
+ */
 @IsSPIImplementation
 public class ProcurementTypeConverterRegistrar implements ITypeConverterRegistrarSPI
 {
