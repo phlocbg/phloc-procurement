@@ -35,6 +35,12 @@ import com.phloc.procurement.order.ProcOrderItem;
 import com.phloc.procurement.order.ProcOrderItemMicroTypeConverter;
 import com.phloc.procurement.order.ProcOrderMicroTypeConverter;
 
+/**
+ * This is the SPI implementation of the micro type converter registry for this
+ * project.
+ * 
+ * @author philip
+ */
 @IsSPIImplementation
 public class ProcurementMicroTypeConverterRegistrar implements IMicroTypeConverterRegistrarSPI
 {
