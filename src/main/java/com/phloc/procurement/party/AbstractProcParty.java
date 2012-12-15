@@ -26,6 +26,7 @@ import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Transient;
 
 import org.eclipse.persistence.annotations.Convert;
 import org.eclipse.persistence.annotations.Converter;
@@ -106,6 +107,13 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   public final EntityIDScheme getEntityIDScheme ()
   {
     return m_eEntityIDScheme;
+  }
+
+  @Transient
+  @Nullable
+  public final String getEntityIDSchemeID ()
+  {
+    return m_eEntityIDScheme == null ? null : m_eEntityIDScheme.getID ();
   }
 
   @Nonnull
