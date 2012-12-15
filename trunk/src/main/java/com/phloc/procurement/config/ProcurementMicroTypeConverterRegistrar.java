@@ -34,10 +34,14 @@ import com.phloc.procurement.order.ProcOrderAttachmentMicroTypeConverter;
 import com.phloc.procurement.order.ProcOrderItem;
 import com.phloc.procurement.order.ProcOrderItemMicroTypeConverter;
 import com.phloc.procurement.order.ProcOrderMicroTypeConverter;
+import com.phloc.procurement.party.ProcCustomer;
+import com.phloc.procurement.party.ProcCustomerMicroTypeConverter;
 import com.phloc.procurement.party.ProcCustomerPaymentTerm;
 import com.phloc.procurement.party.ProcCustomerPaymentTermMicroTypeConverter;
 import com.phloc.procurement.party.ProcMasterData;
 import com.phloc.procurement.party.ProcMasterDataMicroTypeConverter;
+import com.phloc.procurement.party.ProcSupplier;
+import com.phloc.procurement.party.ProcSupplierMicroTypeConverter;
 
 /**
  * This is the SPI implementation of the micro type converter registry for this
@@ -60,6 +64,8 @@ public class ProcurementMicroTypeConverterRegistrar implements IMicroTypeConvert
     aRegistry.registerMicroElementTypeConverter (ProcOrder.class, new ProcOrderMicroTypeConverter ());
     aRegistry.registerMicroElementTypeConverter (ProcCustomerPaymentTerm.class,
                                                  new ProcCustomerPaymentTermMicroTypeConverter ());
+    aRegistry.registerMicroElementTypeConverter (ProcCustomer.class, new ProcCustomerMicroTypeConverter ());
+    aRegistry.registerMicroElementTypeConverter (ProcSupplier.class, new ProcSupplierMicroTypeConverter ());
     aRegistry.registerMicroElementTypeConverter (ProcMasterData.class, new ProcMasterDataMicroTypeConverter ());
   }
 }
