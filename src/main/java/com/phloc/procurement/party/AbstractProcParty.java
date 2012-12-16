@@ -57,7 +57,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   public static final String FIELD_ENTITYIDSCHEME = "idscheme";
   public static final int LENGTH_ENTITYIDSCHEME = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_ENTITYID = "idvalue";
-  public static final int LENGTH_ENTITYIDVALUE = CProcLengthConstraints.LENGTH_TEXT;
+  public static final int LENGTH_ENTITYID = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_ENDPOINTID = "endpointid";
   public static final int LENGTH_ENDPOINTID = CProcLengthConstraints.LENGTH_TEXT_LONG;
   public static final String FIELD_NAME = "name";
@@ -125,7 +125,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
     return EChange.CHANGED;
   }
 
-  @Column (name = FIELD_ENTITYID, length = LENGTH_ENTITYIDVALUE)
+  @Column (name = FIELD_ENTITYID, length = LENGTH_ENTITYID)
   @Nullable
   public final String getEntityID ()
   {
@@ -135,7 +135,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   @Nonnull
   public final EChange setEntityID (@Nullable final String sEntityID)
   {
-    final String sRealEntityID = MasterdataUtils.getEnsuredLength (sEntityID, LENGTH_ENTITYIDVALUE);
+    final String sRealEntityID = MasterdataUtils.getEnsuredLength (sEntityID, LENGTH_ENTITYID);
     if (EqualsUtils.equals (m_sEntityID, sRealEntityID))
       return EChange.UNCHANGED;
     m_sEntityID = sRealEntityID;
@@ -268,6 +268,13 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   public final Locale getCountry ()
   {
     return m_aCountry;
+  }
+
+  @Transient
+  @Nullable
+  public final String getCountryCountry ()
+  {
+    return m_aCountry == null ? null : m_aCountry.getCountry ();
   }
 
   @Nonnull
