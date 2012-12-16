@@ -54,10 +54,10 @@ import com.phloc.procurement.idscheme.JPAEntityIDSchemeConverter;
               @Converter (name = "entityidscheme", converterClass = JPAEntityIDSchemeConverter.class) })
 public abstract class AbstractProcParty extends AbstractProcDeletableObject implements IProcParty
 {
-  public static final String FIELD_IDSCHEME = "idscheme";
-  public static final int LENGTH_IDSCHEME = CProcLengthConstraints.LENGTH_TEXT;
-  public static final String FIELD_IDVALUE = "idvalue";
-  public static final int LENGTH_IDVALUE = CProcLengthConstraints.LENGTH_TEXT;
+  public static final String FIELD_ENTITYIDSCHEME = "idscheme";
+  public static final int LENGTH_ENTITYIDSCHEME = CProcLengthConstraints.LENGTH_TEXT;
+  public static final String FIELD_ENTITYID = "idvalue";
+  public static final int LENGTH_ENTITYIDVALUE = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_ENDPOINTID = "endpointid";
   public static final int LENGTH_ENDPOINTID = CProcLengthConstraints.LENGTH_TEXT_LONG;
   public static final String FIELD_NAME = "name";
@@ -76,8 +76,8 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   public static final int LENGTH_COUNTRY = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_REGISTRATIONNAME = "regname";
   public static final int LENGTH_REGISTRATIONNAME = CProcLengthConstraints.LENGTH_TEXT;
-  public static final String FIELD_REGISTRATIONNUMBER = "regnumber";
-  public static final int LENGTH_REGISTRATIONNUMBER = CProcLengthConstraints.LENGTH_TEXT;
+  public static final String FIELD_COMPANYREGISTRATIONNUMBER = "regnumber";
+  public static final int LENGTH_COMPANYREGISTRATIONNUMBER = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_VATIN = "vatid";
   public static final int LENGTH_VATIN = CProcLengthConstraints.LENGTH_TEXT;
   public static final String FIELD_BIC = "bic";
@@ -101,7 +101,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   private String m_sBIC;
   private String m_sIBAN;
 
-  @Column (name = FIELD_IDSCHEME, length = LENGTH_IDSCHEME)
+  @Column (name = FIELD_ENTITYIDSCHEME, length = LENGTH_ENTITYIDSCHEME)
   @Convert ("entityidscheme")
   @Nullable
   public final EntityIDScheme getEntityIDScheme ()
@@ -125,7 +125,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
     return EChange.CHANGED;
   }
 
-  @Column (name = FIELD_IDVALUE, length = LENGTH_IDVALUE)
+  @Column (name = FIELD_ENTITYID, length = LENGTH_ENTITYIDVALUE)
   @Nullable
   public final String getEntityID ()
   {
@@ -135,7 +135,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   @Nonnull
   public final EChange setEntityID (@Nullable final String sEntityID)
   {
-    final String sRealEntityID = MasterdataUtils.getEnsuredLength (sEntityID, LENGTH_IDVALUE);
+    final String sRealEntityID = MasterdataUtils.getEnsuredLength (sEntityID, LENGTH_ENTITYIDVALUE);
     if (EqualsUtils.equals (m_sEntityID, sRealEntityID))
       return EChange.UNCHANGED;
     m_sEntityID = sRealEntityID;
@@ -296,7 +296,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
     return EChange.CHANGED;
   }
 
-  @Column (name = FIELD_REGISTRATIONNUMBER, length = LENGTH_REGISTRATIONNUMBER)
+  @Column (name = FIELD_COMPANYREGISTRATIONNUMBER, length = LENGTH_COMPANYREGISTRATIONNUMBER)
   @Nullable
   public final String getCompanyRegistrationNumber ()
   {
@@ -307,7 +307,7 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   public final EChange setCompanyRegistrationNumber (@Nullable final String sCompanyRegistrationNumber)
   {
     final String sRealCompanyRegistrationNumber = MasterdataUtils.getEnsuredLength (sCompanyRegistrationNumber,
-                                                                                    LENGTH_REGISTRATIONNUMBER);
+                                                                                    LENGTH_COMPANYREGISTRATIONNUMBER);
     if (EqualsUtils.equals (m_sCompanyRegistrationNumber, sRealCompanyRegistrationNumber))
       return EChange.UNCHANGED;
     m_sCompanyRegistrationNumber = sRealCompanyRegistrationNumber;
