@@ -322,12 +322,12 @@ public abstract class AbstractProcParty extends AbstractProcDeletableObject impl
   }
 
   @Nonnull
-  public final EChange setVATIN (@Nullable final String sVATID)
+  public final EChange setVATIN (@Nullable final String sVATIN)
   {
-    final String sRealVATID = MasterdataUtils.getEnsuredLength (sVATID, LENGTH_VATIN);
-    if (EqualsUtils.equals (m_sVATIN, sRealVATID))
+    final String sRealVATIN = MasterdataUtils.getEnsuredLength (sVATIN, LENGTH_VATIN);
+    if (EqualsUtils.equals (m_sVATIN, sRealVATIN))
       return EChange.UNCHANGED;
-    m_sVATIN = sRealVATID;
+    m_sVATIN = sRealVATIN;
     return EChange.CHANGED;
   }
 
