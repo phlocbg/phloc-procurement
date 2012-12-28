@@ -132,13 +132,6 @@
           </instructions>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <tagBase>http://213.47.80.128/svn/main/phloc-dev-tags/active/${project.name}</tagBase>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 </project>
