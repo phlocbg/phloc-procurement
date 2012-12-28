@@ -8,7 +8,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>phloc-procurement</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.5-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>phloc-procurement</name>
   <description>phloc procurement stuff</description>
@@ -23,9 +23,9 @@
   </licenses>
   
   <scm>
-    <url>scm:svn:http://213.47.80.128/svn/main/phloc-dev-tags/active/phloc-procurement/phloc-procurement-1.0.5</url>
-    <connection>scm:svn:http://213.47.80.128/svn/main/phloc-dev-tags/active/phloc-procurement/phloc-procurement-1.0.5</connection>
-    <developerConnection>scm:svn:http://213.47.80.128/svn/main/phloc-dev-tags/active/phloc-procurement/phloc-procurement-1.0.5</developerConnection>
+    <url>http://code.google.com/p/phloc-procurement/source/browse/</url>
+    <connection>scm:svn:http://phloc-procurement.googlecode.com/svn/trunk</connection>
+    <developerConnection>scm:svn:https://phloc-procurement.googlecode.com/svn/trunk</developerConnection>
   </scm>
 
   <organization>
