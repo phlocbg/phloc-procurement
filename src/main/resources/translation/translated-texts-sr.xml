@@ -18,7 +18,7 @@
     limitations under the License.
 
 -->
-<translationitems count="63">
+<translationitems count="62">
   <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECLASS">
     <sr>e-Cl@ss</sr>
   </item>
@@ -204,8 +204,5 @@
   </item>
   <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
     <sr>Вредност мора бити састављена из 13 бројева.</sr>
-  </item>
-  <item id="com.phloc.procurement.idscheme.validation.EntitySchemeErrorTexts.INVALID_ENTITYID_SCHEME">
-    <sr>Шема је неважећа.</sr>
   </item>
 </translationitems>

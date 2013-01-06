@@ -169,6 +169,9 @@
   <item id="com.phloc.procurement.codelist.EResponseCodeName.RE">
     <sh>Odbijen</sh>
   </item>
+  <item id="com.phloc.procurement.codelist.validation.ECommoditySchemeErrorTexts.INVALID_COMMODITY_SCHEME">
+    <sh>Šema nije ispravna.</sh>
+  </item>
   <item id="com.phloc.procurement.domain.EProcStateName.ACCEPTED">
     <sh>Prihvaćeno</sh>
   </item>
@@ -204,8 +207,5 @@
   </item>
   <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
     <sh>Vrednost se mora sastojati od 13 cifara</sh>
-  </item>
-  <item id="com.phloc.procurement.idscheme.validation.EntitySchemeErrorTexts.INVALID_ENTITYID_SCHEME">
-    <sh>Šema nije ispravna.</sh>
   </item>
 </translationitems>

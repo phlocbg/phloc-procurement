@@ -169,6 +169,9 @@
   <item id="com.phloc.procurement.codelist.EResponseCodeName.RE">
     <mk>Одбиено</mk>
   </item>
+  <item id="com.phloc.procurement.codelist.validation.ECommoditySchemeErrorTexts.INVALID_COMMODITY_SCHEME">
+    <mk>Неважечка шема</mk>
+  </item>
   <item id="com.phloc.procurement.domain.EProcStateName.ACCEPTED">
     <mk>Прифатено</mk>
   </item>
@@ -204,8 +207,5 @@
   </item>
   <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
     <mk>Вредноста мора да се состои од 13 цифри</mk>
-  </item>
-  <item id="com.phloc.procurement.idscheme.validation.EntitySchemeErrorTexts.INVALID_ENTITYID_SCHEME">
-    <mk>Шемата е неважечка</mk>
   </item>
 </translationitems>
