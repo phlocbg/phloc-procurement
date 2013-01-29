@@ -19,16 +19,14 @@ package com.phloc.procurement.order;
 
 import javax.annotation.Nullable;
 
+import com.phloc.commons.name.IHasDescription;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
 import com.phloc.masterdata.price.Price;
 import com.phloc.procurement.codelist.ICommodityScheme;
 import com.phloc.procurement.domain.IProcObject;
 
-public interface IProcOrderItem extends IProcObject
+public interface IProcOrderItem extends IProcObject, IHasDescription
 {
-  @Nullable
-  String getDescription ();
-
   @Nullable
   String getNote ();
 

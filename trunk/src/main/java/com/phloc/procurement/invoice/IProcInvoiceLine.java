@@ -19,6 +19,7 @@ package com.phloc.procurement.invoice;
 
 import javax.annotation.Nullable;
 
+import com.phloc.commons.name.IHasDescription;
 import com.phloc.masterdata.currency.IReadonlyCurrencyValue;
 import com.phloc.masterdata.price.Price;
 import com.phloc.masterdata.tax.ETaxCategoryUN5305;
@@ -30,7 +31,7 @@ import com.phloc.procurement.domain.IProcObject;
  * 
  * @author philip
  */
-public interface IProcInvoiceLine extends IProcObject
+public interface IProcInvoiceLine extends IProcObject, IHasDescription
 {
   /**
    * @return The ID of the referenced order item

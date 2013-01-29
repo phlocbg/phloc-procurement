@@ -17,18 +17,14 @@
  */
 package com.phloc.procurement.party;
 
-import javax.annotation.Nullable;
-
+import com.phloc.commons.name.IHasDescription;
 import com.phloc.procurement.domain.IProcObject;
 
-public interface IProcCustomerPaymentTerm extends IProcObject
+public interface IProcCustomerPaymentTerm extends IProcObject, IHasDescription
 {
   int getOwnerID ();
 
   double getPercentage ();
-
-  @Nullable
-  String getDescription ();
 
   int getDays ();
 }
