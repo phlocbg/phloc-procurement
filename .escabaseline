@@ -1,0 +1,76 @@
+# Enerjy Software baseline data (files=26, problems=49).
+path: /phloc-procurement/src/main/java/com/phloc/procurement/attachment/AbstractProcAttachment.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcAttachment' does not contain an abstract method
+problem: JAVA0016:JAVA0016 Abstract class 'AbstractProcAttachment' contains public constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/attachment/AbstractProcAttachmentFileBasedStorageHandlerSPI.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcAttachmentFileBasedStorageHandlerSPI' does not contain an abstract method
+problem: JAVA0016:JAVA0016 Abstract class 'AbstractProcAttachmentFileBasedStorageHandlerSPI' contains public constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/attachment/ProcAttachmentManagerFactory.java
+problem: JAVA0014:JAVA0014 Class 'ProcAttachmentManagerFactory' with only static members has non-private constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/attachment/ProcFileItemAttachment.java
+problem: JAVA0106:JAVA0106 Unnecessary import from current package 'com.phloc.procurement.attachment.ProcResourceAttachment'
+path: /phloc-procurement/src/main/java/com/phloc/procurement/db/AbstractProcManager.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcManager' does not contain an abstract method
+path: /phloc-procurement/src/main/java/com/phloc/procurement/db/ProcMasterDataManager.java
+problem: JAVA0077:JAVA0077 Private field 's_aLogger' not used in declaring class
+path: /phloc-procurement/src/main/java/com/phloc/procurement/domain/AbstractProcDeletableObject.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcDeletableObject' does not contain an abstract method
+path: /phloc-procurement/src/main/java/com/phloc/procurement/domain/AbstractProcObject.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcObject' does not contain an abstract method
+path: /phloc-procurement/src/main/java/com/phloc/procurement/exchange/ubl/AbstractUBL20Serializer.java
+problem: JAVA0005:JAVA0005 Imports not in specified order
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractUBL20Serializer' does not contain an abstract method
+problem: JAVA0014:JAVA0014 Class 'AbstractUBL20Serializer' with only static members has non-private constructor
+problem: JAVA0128:JAVA0128 Public constructor 'TaxKey' in non-public class
+problem: JAVA0138:JAVA0138 6 parameters defined for method 'createTaxSubtotal' (maximum: 5)
+path: /phloc-procurement/src/main/java/com/phloc/procurement/exchange/ubl/UBL20InvoiceSerializer.java
+problem: JAVA0005:JAVA0005 Imports not in specified order
+path: /phloc-procurement/src/main/java/com/phloc/procurement/exchange/ubl/UBL20OrderSerializer.java
+problem: JAVA0005:JAVA0005 Imports not in specified order
+path: /phloc-procurement/src/main/java/com/phloc/procurement/idscheme/JPAEntityIDSchemeConverter.java
+problem: JAVA0234:JAVA0234 Class 'JPAEntityIDSchemeConverter' is Serializable but does not define serialVersionUID
+path: /phloc-procurement/src/main/java/com/phloc/procurement/invoice/ProcInvoice.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'ProcInvoice' missing constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/invoice/ProcInvoiceLine.java
+problem: JAVA0100:JAVA0100 Class contains 10 non-final fields (maximum: 8)
+problem: JAVA0136:JAVA0136 32 methods defined in class 'ProcInvoiceLine' (maximum: 20)
+problem: JAVA0132:JAVA0132 Method overload 'ProcInvoiceLine.setUnitPrice(Price)' with compatible signature to 'ProcInvoiceLine.setUnitPrice(IReadonlyPrice)'
+path: /phloc-procurement/src/main/java/com/phloc/procurement/order/ProcOrder.java
+problem: JAVA0136:JAVA0136 26 methods defined in class 'ProcOrder' (maximum: 20)
+problem: JAVA0057:JAVA0057 Unnecessary default constructor 'ProcOrder'
+path: /phloc-procurement/src/main/java/com/phloc/procurement/order/ProcOrderItem.java
+problem: JAVA0136:JAVA0136 25 methods defined in class 'ProcOrderItem' (maximum: 20)
+problem: JAVA0132:JAVA0132 Method overload 'ProcOrderItem.setUnitPrice(Price)' with compatible signature to 'ProcOrderItem.setUnitPrice(IReadonlyPrice)'
+path: /phloc-procurement/src/main/java/com/phloc/procurement/party/AbstractProcParty.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcParty' does not contain an abstract method
+problem: JAVA0100:JAVA0100 Class contains 15 non-final fields (maximum: 8)
+problem: JAVA0136:JAVA0136 35 methods defined in class 'AbstractProcParty' (maximum: 20)
+path: /phloc-procurement/src/main/java/com/phloc/procurement/party/AbstractProcPartyMicroTypeConverter.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractProcPartyMicroTypeConverter' does not contain an abstract method
+path: /phloc-procurement/src/main/java/com/phloc/procurement/party/ProcCustomer.java
+problem: JAVA0054:JAVA0054 Inheritance depth 4 exceeds maximum 3
+problem: JAVA0137:JAVA0137 Non-abstract class 'ProcCustomer' missing constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/party/ProcMasterData.java
+problem: JAVA0054:JAVA0054 Inheritance depth 4 exceeds maximum 3
+problem: JAVA0137:JAVA0137 Non-abstract class 'ProcMasterData' missing constructor
+path: /phloc-procurement/src/main/java/com/phloc/procurement/party/ProcSupplier.java
+problem: JAVA0054:JAVA0054 Inheritance depth 4 exceeds maximum 3
+problem: JAVA0057:JAVA0057 Unnecessary default constructor 'ProcSupplier'
+path: /phloc-procurement/src/test/java/com/phloc/procurement/exchange/AbstractExchangeTestCase.java
+problem: JAVA0011:JAVA0011 Abstract class 'AbstractExchangeTestCase' does not contain an abstract method
+problem: JAVA0076:JAVA0076 Use of magic number '123'
+problem: JAVA0076:JAVA0076 Use of magic number '10'
+problem: JAVA0076:JAVA0076 Use of magic number '123'
+problem: JAVA0076:JAVA0076 Use of magic number '10'
+path: /phloc-procurement/src/test/java/com/phloc/procurement/exchange/ubl/UBL20InvoiceSerializerTest.java
+problem: JAVA0005:JAVA0005 Imports not in specified order
+path: /phloc-procurement/src/test/java/com/phloc/procurement/exchange/ubl/UBL20OrderSerializerTest.java
+problem: JAVA0005:JAVA0005 Imports not in specified order
+path: /phloc-procurement/src/test/java/com/phloc/procurement/tools/MainObsoletedReadHarmonizedSystem.java
+problem: JAVA0014:JAVA0014 Class 'MainObsoletedReadHarmonizedSystem' with only static members has non-private constructor
+problem: JAVA0139:JAVA0139 Definition of main other than public static void main(java.lang.String[])
+problem: JAVA0173:JAVA0173 Unused method parameter 'args'
+path: /phloc-procurement/src/test/java/com/phloc/procurement/tools/MainObsoletedReadUNSPSC.java
+problem: JAVA0014:JAVA0014 Class 'MainObsoletedReadUNSPSC' with only static members has non-private constructor
+problem: JAVA0139:JAVA0139 Definition of main other than public static void main(java.lang.String[])
+problem: JAVA0173:JAVA0173 Unused method parameter 'args'
