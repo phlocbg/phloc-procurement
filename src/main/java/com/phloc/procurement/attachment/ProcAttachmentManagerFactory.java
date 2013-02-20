@@ -17,11 +17,12 @@
  */
 package com.phloc.procurement.attachment;
 
+import java.util.ServiceLoader;
+
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.Immutable;
 
 import com.phloc.commons.exceptions.InitializationException;
-import com.phloc.commons.lang.ServiceLoaderBackport;
 
 /**
  * Use this class to retrieve the attachment manager. It uses the storage
@@ -38,7 +39,7 @@ public final class ProcAttachmentManagerFactory
   {
     // Find the SPI implementation
     IProcAttachmentStorageHandlerSPI aStorageHandler = null;
-    for (final IProcAttachmentStorageHandlerSPI aSPI : ServiceLoaderBackport.load (IProcAttachmentStorageHandlerSPI.class))
+    for (final IProcAttachmentStorageHandlerSPI aSPI : ServiceLoader.load (IProcAttachmentStorageHandlerSPI.class))
       if (aSPI != null)
       {
         aStorageHandler = aSPI;
