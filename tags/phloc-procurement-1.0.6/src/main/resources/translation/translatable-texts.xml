@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+    Copyright (C) 2006-2013 phloc systems
+    http://www.phloc.com
+    office[at]phloc[dot]com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<translationitems count="64">
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECLASS">
+    <de>e-Cl@ss</de>
+    <en>e-Cl@ss</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECROKAT">
+    <de>eCROKAT</de>
+    <en>eCROKAT</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.HS">
+    <de>Harmonized System</de>
+    <en>Harmonized System</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.UNSPSC">
+    <de>UNSPSC</de>
+    <en>UNSPSC</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BE">
+    <de>Bündel </de>
+    <en>Bundle</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BG">
+    <de>Beutel</de>
+    <en>Bag</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BX">
+    <de>Kisten</de>
+    <en>Box</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CH">
+    <de>Container</de>
+    <en>Container</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CMT">
+    <de>Zentimeter</de>
+    <en>Centimetre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.E49">
+    <de>Personentage </de>
+    <en>working day</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLI">
+    <de>Gallone (UK)</de>
+    <en>gallon (UK)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLL">
+    <de>Gallone (US)</de>
+    <en>gallon (US)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GRM">
+    <de>Gramm</de>
+    <en>Gram</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GT">
+    <de>Bruttotonne </de>
+    <en>gross ton</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.H87">
+    <de>Stück</de>
+    <en>Piece</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HDW">
+    <de>hundert Kilogramm Trockengewicht</de>
+    <en>hundred kilogram, dry weight</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HLT">
+    <de>Hektoliter</de>
+    <en>Hectolitre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.J57">
+    <de>Barrel (UK)</de>
+    <en>barrel (UK petroleum)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.KGM">
+    <de>Kilogramm</de>
+    <en>Kilogram</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L61">
+    <de>Pinte (US dry)</de>
+    <en>pint (US dry)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L84">
+    <de>Tonne (UK Versand)</de>
+    <en>ton (UK shipping)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L86">
+    <de>Tonne (US-Express)</de>
+    <en>ton (US shipping)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LBR">
+    <de>Pfund</de>
+    <en>Pound</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LTR">
+    <de>Liter</de>
+    <en>Litre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTK">
+    <de>Quadratmeter</de>
+    <en>square metre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTQ">
+    <de>Kubikmeter</de>
+    <en>cubic metre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTR">
+    <de>Meter</de>
+    <en>Metre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NC">
+    <de>Auto</de>
+    <en>Car</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPL">
+    <de>Anzahl Pakete </de>
+    <en>number of parcels</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPR">
+    <de>Anzahl Paare</de>
+    <en>number of pairs</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPT">
+    <de>Stück</de>
+    <en>number of parts</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NV">
+    <de>Fahrzeuge</de>
+    <en>Vehicle</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.RA">
+    <de>Rack</de>
+    <en>Rack</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ST">
+    <de>Blatt</de>
+    <en>Sheet</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STL">
+    <de>Standard-Liter-</de>
+    <en>standard litre</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STN">
+    <de>ton (USA) oder short ton (UK / US)</de>
+    <en>ton (US) or short ton (UK/US)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.T3">
+    <de>tausend Stück </de>
+    <en>thousand piece</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TNE">
+    <de>metrische Tonne </de>
+    <en>tonne (metric ton)</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TV">
+    <de>tausend Kilogramm</de>
+    <en>thousand kilogram</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ZZ">
+    <de>gemeinsam definiert</de>
+    <en>mutually defined</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AA">
+    <de>Belastungsanzeige</de>
+    <en>Debit advice</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AC">
+    <de>Bestätigung mit Details, Änderungen</de>
+    <en>Acknowledge - with detail and change</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AD">
+    <de>Bestätigung mit Details, keine Änderungen</de>
+    <en>Acknowledge - with detail, no change,</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AF">
+    <de>Belastungsanzeige / Bestätigung der Nachricht</de>
+    <en>Debit advice/message acknowledgement</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AG">
+    <de>Authentifizierung</de>
+    <en>Authentication</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AJ">
+    <de>In Arbeit</de>
+    <en>Pending</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AP">
+    <de>Akzeptiert</de>
+    <en>Accepted</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AQ">
+    <de>Antwort erwartet</de>
+    <en>Response expected</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.CA">
+    <de>Akzeptiert, aber mit Bedingungen</de>
+    <en>Conditionally accepted</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.RE">
+    <de>Abgelehnt</de>
+    <en>Rejected</en>
+  </item>
+  <item id="com.phloc.procurement.codelist.validation.ECommoditySchemeErrorTexts.INVALID_COMMODITY_SCHEME">
+    <de>Das Schema ist ungültig.</de>
+    <en>The scheme is invalid.</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.ACCEPTED">
+    <de>Akzeptiert</de>
+    <en>Accepted</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.CREATED">
+    <de>Erstellt</de>
+    <en>Created</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.PAID">
+    <de>Bezahlt</de>
+    <en>Paid</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.RECEIVED">
+    <de>Empfangen</de>
+    <en>Received</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.REJECTED">
+    <de>Abgelehnt</de>
+    <en>Rejected</en>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.SENT">
+    <de>Gesendet</de>
+    <en>Sent</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_DUNS">
+    <de>Dun and Bradstreet Number</de>
+    <en>Dun and Bradstreet Number</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_GLN">
+    <de>Global Location Number</de>
+    <en>Global Location Number</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_IBAN">
+    <de>International Bank Account Number</de>
+    <en>International Bank Account Number</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_VATIN">
+    <de>Umsatzsteueridentifikationsnummer</de>
+    <en>Value added tax identification number</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_DUNS">
+    <de>Der Wert muss aus 9 Zahlen bestehen.</de>
+    <en>The value must be assembled from 9 digits.</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
+    <de>Der Wert muss aus 13 Zahlen bestehen.</de>
+    <en>The value must be assembled from 13 digits.</en>
+  </item>
+  <item id="com.phloc.procurement.idscheme.validation.EEntitySchemeErrorTexts.INVALID_ENTITYID_SCHEME">
+    <de>Das Schema ist ungültig.</de>
+    <en>The scheme is invalid.</en>
+  </item>
+</translationitems>

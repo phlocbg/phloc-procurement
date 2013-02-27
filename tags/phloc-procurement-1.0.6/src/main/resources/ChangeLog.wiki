@@ -1,0 +1,14 @@
+#summary Change log of phloc-procurement
+= Change log =
+<wiki:comment>This content is generated. Do not modify!</wiki:comment>
+<table border="1" cellspacing="0"><thead><tr><th>Date</th><th>Action</th><th>Category</th><th>Incompatible?</th><th>Description</th></tr></thead><tbody><tr border="1"><td>2/27/13</td><td colspan="4">_Release *1.0.6*_</td></tr>
+<tr><td>2/27/13</td><td>update</td><td>tech</td><td></td><td>Updated to [http://code.google.com/p/phloc-scopes phloc-scopes] 4.5.0, [http://code.google.com/p/phloc-db phloc-db] 2.8.5 and [http://code.google.com/p/phloc-masterdata phloc-masterdata] 3.0.5</td></tr>
+<tr border="1"><td>12/28/12</td><td colspan="4">_Release *1.0.5*_</td></tr>
+<tr><td>12/15/12</td><td>add</td><td>api</td><td></td><td>Added MicroType converter for master data, customer and supplier</td></tr>
+<tr><td>11/20/12</td><td>add</td><td>api</td><td></td><td>Added MicroType converter for invoice and order</td></tr>
+<tr><td>6/12/12</td><td>update</td><td>tech</td><td></td><td>Updated to [http://code.google.com/p/phloc-commons phloc-commons] 3.6.0-RC1</td></tr>
+<tr border="1"><td>1/21/12</td><td colspan="4">_Release *1.0.4*_</td></tr>
+<tr><td>8/22/11</td><td>update</td><td>api</td><td></td><td>Updated to [http://code.google.com/p/phloc-commons phloc-commons] 3.1.0 and [http://code.google.com/p/phloc-scopes phloc-scopes] 2.5.1</td></tr>
+<tr border="1"><td>8/22/11</td><td colspan="4">_Release *1.0.3*_</td></tr>
+<tr><td>8/22/11</td><td>add</td><td>feature</td><td></td><td>Added export of invoice and order as UBL</td></tr>
+</tbody></table>

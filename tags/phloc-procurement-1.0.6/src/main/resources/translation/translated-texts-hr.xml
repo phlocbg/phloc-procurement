@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+    Copyright (C) 2006-2013 phloc systems
+    http://www.phloc.com
+    office[at]phloc[dot]com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<translationitems count="63">
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECLASS">
+    <hr>e-Cl@ss</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECROKAT">
+    <hr>eCROKAT</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.HS">
+    <hr>Harmonizirani sustav</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.UNSPSC">
+    <hr>UNSPSC</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BE">
+    <hr>Paket </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BG">
+    <hr>Torba</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BX">
+    <hr>Kutija</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CH">
+    <hr>Kontejner</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CMT">
+    <hr>Centimetar</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.E49">
+    <hr>radni dan </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLI">
+    <hr>galon (UK)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLL">
+    <hr>galon(US)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GRM">
+    <hr>Gram</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GT">
+    <hr>brutto tona </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.H87">
+    <hr>Komad</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HDW">
+    <hr>sto kilograma, suhi teret</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HLT">
+    <hr>Hektolitar</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.J57">
+    <hr>barel (UK petrolej)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.KGM">
+    <hr>Kilogram</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L61">
+    <hr>pinta (0,47 litara)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L84">
+    <hr>tona (UK prijevoz)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L86">
+    <hr>tona (US prijevoz)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LBR">
+    <hr>Lbs.</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LTR">
+    <hr>Litra</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTK">
+    <hr>četvorni metar</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTQ">
+    <hr>metar kubični</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTR">
+    <hr>Metar</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NC">
+    <hr>Automobil</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPL">
+    <hr>broj parcela </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPR">
+    <hr>broj parova</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPT">
+    <hr>broj dijelova</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NV">
+    <hr>Vozilo</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.RA">
+    <hr>Ormar</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ST">
+    <hr>List</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STL">
+    <hr>standardna litra</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STN">
+    <hr>tona (US) ili kratka tona (UK/US)</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.T3">
+    <hr>tisuću komada </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TNE">
+    <hr>tona (metrička tona) </hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TV">
+    <hr>tisuću kilograma</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ZZ">
+    <hr>međusobno definirano</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AA">
+    <hr>Obavijest o zaduženju</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AC">
+    <hr>Potvrda-sa detaljima i promjenom</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AD">
+    <hr>Potvrda-sa detaljima, bez promjene,</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AF">
+    <hr>Obavijest o dugovanju/potvrda poruke</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AG">
+    <hr>Ovjera</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AJ">
+    <hr>Neriješen</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AP">
+    <hr>Prihvaćen</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AQ">
+    <hr>Očekivani odgovor</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.CA">
+    <hr>Uvjetno prihvaćen</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.RE">
+    <hr>Odbijen</hr>
+  </item>
+  <item id="com.phloc.procurement.codelist.validation.ECommoditySchemeErrorTexts.INVALID_COMMODITY_SCHEME">
+    <hr>Shema je nevažeća.</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.ACCEPTED">
+    <hr>Prihvaćeno</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.CREATED">
+    <hr>Kreirano</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.PAID">
+    <hr>Plaćeno</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.RECEIVED">
+    <hr>Primljeno</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.REJECTED">
+    <hr>Odbijeno</hr>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.SENT">
+    <hr>Poslano</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_DUNS">
+    <hr>Dun &amp; Bradstreet broj (DUNS)</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_GLN">
+    <hr>Globalni lokacijski broj (GLN)</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_IBAN">
+    <hr>IBAN</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_VATIN">
+    <hr>PDV ID</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_DUNS">
+    <hr>Vrijednost mora biti sastavljena od 9 znamenki.</hr>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
+    <hr>Vrijednost mora biti sastavljena od 13 znamenki.</hr>
+  </item>
+</translationitems>

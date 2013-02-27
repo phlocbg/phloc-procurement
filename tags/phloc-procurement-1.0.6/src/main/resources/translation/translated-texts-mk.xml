@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+    Copyright (C) 2006-2013 phloc systems
+    http://www.phloc.com
+    office[at]phloc[dot]com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<translationitems count="63">
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECLASS">
+    <mk>e-Cl@ss</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.ECROKAT">
+    <mk>eCROKAT</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.HS">
+    <mk>Хармонизиран систем</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.ECommoditySchemeName.UNSPSC">
+    <mk>UNSPSC</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BE">
+    <mk>Пакет </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BG">
+    <mk>Торба</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.BX">
+    <mk>Кутија</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CH">
+    <mk>Контејнер</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.CMT">
+    <mk>Центиметар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.E49">
+    <mk>работен ден </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLI">
+    <mk>галон (UK)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GLL">
+    <mk>галон (US)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GRM">
+    <mk>Грам</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.GT">
+    <mk>тон </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.H87">
+    <mk>Дел</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HDW">
+    <mk>100 кг, сува тежина</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.HLT">
+    <mk>Хектолитар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.J57">
+    <mk>барел (UK petroleum)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.KGM">
+    <mk>Килограм</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L61">
+    <mk>пајнт (US dry)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L84">
+    <mk>тон (UK shipping)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.L86">
+    <mk>тон (US shipping)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LBR">
+    <mk>Фунта</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.LTR">
+    <mk>Литар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTK">
+    <mk>квадратен метар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTQ">
+    <mk>кубен метар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.MTR">
+    <mk>Метар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NC">
+    <mk>Кола</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPL">
+    <mk>број на парцели </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPR">
+    <mk>број на парови</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NPT">
+    <mk>број на делови</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.NV">
+    <mk>Возило</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.RA">
+    <mk>Рек (фиока)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ST">
+    <mk>Табела</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STL">
+    <mk>стандард литар</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.STN">
+    <mk>тон (US) или мал тон (UK/US)</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.T3">
+    <mk>илјада делови </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TNE">
+    <mk>тон (метрички) </mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.TV">
+    <mk>илјада килограми</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EDefaultUnitName.ZZ">
+    <mk>заеднички дефиниран</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AA">
+    <mk>Дебитен совет</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AC">
+    <mk>Потврди - со детали и промена</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AD">
+    <mk>Потврди - со детали и без промена</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AF">
+    <mk>Дебитен совет/потврдна порака</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AG">
+    <mk>Автентикација</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AJ">
+    <mk>Чека</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AP">
+    <mk>Прифатено</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.AQ">
+    <mk>Очекувам одговор</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.CA">
+    <mk>Условно прифатено</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.EResponseCodeName.RE">
+    <mk>Одбиено</mk>
+  </item>
+  <item id="com.phloc.procurement.codelist.validation.ECommoditySchemeErrorTexts.INVALID_COMMODITY_SCHEME">
+    <mk>Неважечка шема</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.ACCEPTED">
+    <mk>Прифатено</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.CREATED">
+    <mk>Креирано</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.PAID">
+    <mk>Платено</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.RECEIVED">
+    <mk>Примено</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.REJECTED">
+    <mk>Одбиено</mk>
+  </item>
+  <item id="com.phloc.procurement.domain.EProcStateName.SENT">
+    <mk>Испратено</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_DUNS">
+    <mk>D&amp;B број (Ден и Бредстрит)</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_GLN">
+    <mk>Број за глобална позиција</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_IBAN">
+    <mk>Одбиено</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.NAME_VATIN">
+    <mk>Идентификациски број за додадена вредност</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_DUNS">
+    <mk>Вредноста мора да се состои од 9 цифри</mk>
+  </item>
+  <item id="com.phloc.procurement.idscheme.EntityIDSchemeManager$EText.VALIDATE_GLN">
+    <mk>Вредноста мора да се состои од 13 цифри</mk>
+  </item>
+</translationitems>
