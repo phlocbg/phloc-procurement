@@ -21,9 +21,8 @@ import javax.annotation.Nonnull;
 
 import com.phloc.commons.annotations.Nonempty;
 import com.phloc.datetime.PDTFactory;
-import com.phloc.procurement.attachment.ProcResourceAttachment;
-import com.phloc.scopes.web.fileupload.FileItemResource;
-import com.phloc.scopes.web.fileupload.IFileItem;
+import com.phloc.web.fileupload.FileItemResource;
+import com.phloc.web.fileupload.IFileItem;
 
 /**
  * A special attachment for upload of files. It is based on a {@link IFileItem}
