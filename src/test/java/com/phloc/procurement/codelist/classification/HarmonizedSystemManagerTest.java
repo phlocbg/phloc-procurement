@@ -24,7 +24,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
 
-import com.phloc.scopes.nonweb.mock.ScopeTestRule;
+import com.phloc.scopes.mock.ScopeTestRule;
 
 /**
  * Test class for class {@link HarmonizedSystemManager}.

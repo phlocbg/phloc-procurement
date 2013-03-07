@@ -46,7 +46,7 @@ import com.phloc.procurement.party.ProcCustomer;
 import com.phloc.procurement.party.ProcCustomerPaymentTerm;
 import com.phloc.procurement.party.ProcMasterData;
 import com.phloc.procurement.party.ProcSupplier;
-import com.phloc.scopes.nonweb.mock.ScopeTestRule;
+import com.phloc.scopes.mock.ScopeTestRule;
 
 /**
  * Abstract test class for exchanging objects.
