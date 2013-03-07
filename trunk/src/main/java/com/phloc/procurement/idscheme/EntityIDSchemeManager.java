@@ -38,7 +38,7 @@ import com.phloc.commons.text.impl.TextProvider;
 import com.phloc.commons.text.resolve.DefaultTextResolver;
 import com.phloc.masterdata.swift.validation.StringIBANValidator;
 import com.phloc.masterdata.vat.validation.StringVATINValidator;
-import com.phloc.scopes.nonweb.singleton.GlobalSingleton;
+import com.phloc.scopes.singleton.GlobalSingleton;
 import com.phloc.validation.validator.string.StringRegExValidator;
 
 /**

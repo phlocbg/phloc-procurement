@@ -29,7 +29,7 @@ import javax.annotation.concurrent.Immutable;
 import com.phloc.commons.annotations.UsedViaReflection;
 import com.phloc.commons.callback.INonThrowingRunnableWithParameter;
 import com.phloc.commons.io.resource.ClassPathResource;
-import com.phloc.scopes.nonweb.singleton.GlobalSingleton;
+import com.phloc.scopes.singleton.GlobalSingleton;
 
 @Immutable
 public final class UNSPSCManager extends GlobalSingleton
