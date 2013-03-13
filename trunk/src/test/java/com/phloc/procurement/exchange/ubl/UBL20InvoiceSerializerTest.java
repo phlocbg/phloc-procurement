@@ -65,6 +65,6 @@ public final class UBL20InvoiceSerializerTest extends AbstractExchangeTestCase
 
     SimpleFileIO.writeFile (new File ("test-invoice.xml"),
                             XMLWriter.getXMLString (aUBLDoc),
-                            XMLWriterSettings.DEFAULT_XML_CHARSET);
+                            XMLWriterSettings.DEFAULT_XML_CHARSET_OBJ);
   }
 }
