@@ -119,6 +119,6 @@ public final class MainObsoletedReadUNSPSC
 
     SimpleFileIO.writeFile (new File ("src/main/resources/codelists/unspsc.xml"),
                             MicroWriter.getXMLString (aDoc),
-                            CCharset.CHARSET_UTF_8);
+                            CCharset.CHARSET_UTF_8_OBJ);
   }
 }
