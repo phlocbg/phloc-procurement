@@ -60,7 +60,7 @@ public final class ProcCustomerMicroTypeConverter extends AbstractProcPartyMicro
     convertToNativePartial (ret, aElement);
     ret.setClient (StringParser.parseInt (aElement.getAttribute (ATTR_CLIENT), CGlobal.ILLEGAL_UINT));
     final List <ProcCustomerPaymentTerm> aPaymentTerms = new ArrayList <ProcCustomerPaymentTerm> ();
-    for (final IMicroElement ePaymentTerm : aElement.getChildElements (ELEMENT_PAYMENTTERM))
+    for (final IMicroElement ePaymentTerm : aElement.getAllChildElements (ELEMENT_PAYMENTTERM))
     {
       final ProcCustomerPaymentTerm aPaymentTerm = MicroTypeConverter.convertToNative (ePaymentTerm,
                                                                                        ProcCustomerPaymentTerm.class);
