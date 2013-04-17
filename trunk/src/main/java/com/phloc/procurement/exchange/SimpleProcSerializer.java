@@ -256,7 +256,7 @@ public final class SimpleProcSerializer
     aCustomer.setClient (StringParser.parseInt (MicroUtils.getChildTextContent (eElement, "client"),
                                                 CGlobal.ILLEGAL_UINT));
     final List <ProcCustomerPaymentTerm> aPaymentTerms = new ArrayList <ProcCustomerPaymentTerm> ();
-    for (final IMicroElement ePaymentTerm : eElement.getChildElements ("paymentterm"))
+    for (final IMicroElement ePaymentTerm : eElement.getAllChildElements ("paymentterm"))
     {
       final ProcCustomerPaymentTerm aPaymentTerm = new ProcCustomerPaymentTerm (aCustomer);
       _readObject (aPaymentTerm, ePaymentTerm, bReadID);
@@ -356,7 +356,7 @@ public final class SimpleProcSerializer
 
     // Read all order items
     final List <ProcOrderItem> aOrderItems = new ArrayList <ProcOrderItem> ();
-    for (final IMicroElement eOrderItem : eElement.getChildElements ("orderitem"))
+    for (final IMicroElement eOrderItem : eElement.getAllChildElements ("orderitem"))
     {
       final ProcOrderItem aOrderItem = new ProcOrderItem (aOrder);
       _readObject (aOrderItem, eOrderItem, bReadID);
@@ -375,7 +375,7 @@ public final class SimpleProcSerializer
 
     // Read all attachments
     final List <ProcOrderAttachment> aAttachments = new ArrayList <ProcOrderAttachment> ();
-    for (final IMicroElement eAttachment : eElement.getChildElements ("attachment"))
+    for (final IMicroElement eAttachment : eElement.getAllChildElements ("attachment"))
     {
       final IProcAttachment aAttachment = aHandler.handleReadAttachment (_readAttachment (eAttachment));
       aAttachments.add (new ProcOrderAttachment (aOrder, aAttachment));
@@ -448,7 +448,7 @@ public final class SimpleProcSerializer
 
     // Read all invoice lines
     final List <ProcInvoiceLine> aInvoiceLines = new ArrayList <ProcInvoiceLine> ();
-    for (final IMicroElement eInvoiceLine : eElement.getChildElements ("invoiceline"))
+    for (final IMicroElement eInvoiceLine : eElement.getAllChildElements ("invoiceline"))
     {
       final ProcInvoiceLine aInvoiceLine = new ProcInvoiceLine (aInvoice);
       _readObject (aInvoiceLine, eInvoiceLine, bReadID);
@@ -472,7 +472,7 @@ public final class SimpleProcSerializer
 
     // Read all attachments
     final List <ProcInvoiceAttachment> aAttachments = new ArrayList <ProcInvoiceAttachment> ();
-    for (final IMicroElement eAttachment : eElement.getChildElements ("attachment"))
+    for (final IMicroElement eAttachment : eElement.getAllChildElements ("attachment"))
     {
       // Read the attachment and persist it
       final IProcAttachment aAttachment = aHandler.handleReadAttachment (_readAttachment (eAttachment));

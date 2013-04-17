@@ -46,7 +46,7 @@ public final class HarmonizedSystemReader
     final IMicroDocument aDoc = MicroReader.readMicroXML (aRes);
     if (aDoc != null)
     {
-      for (final IMicroElement eItem : aDoc.getDocumentElement ().getChildElements (ELEMENT_ITEM))
+      for (final IMicroElement eItem : aDoc.getDocumentElement ().getAllChildElements (ELEMENT_ITEM))
       {
         final String sCode = eItem.getAttribute (ATTR_CODE);
         final IMicroElement eTitle = eItem.getFirstChildElement (ELEMENT_TITLE);

@@ -81,7 +81,7 @@ public final class ProcInvoiceMicroTypeConverter implements IMicroTypeConverter
     ret.setInvoiceNumber (aElement.getAttribute (ATTR_INVOICE_NUMBER));
     ret.setInvoiceNote (MicroUtils.getChildTextContent (aElement, ELEMENT_INVOICE_NOTE));
     final List <ProcInvoiceLine> aInvoiceLines = new ArrayList <ProcInvoiceLine> ();
-    for (final IMicroElement eInvoiceLine : aElement.getChildElements (ELEMENT_LINE))
+    for (final IMicroElement eInvoiceLine : aElement.getAllChildElements (ELEMENT_LINE))
     {
       final ProcInvoiceLine aInvoiceLine = MicroTypeConverter.convertToNative (eInvoiceLine, ProcInvoiceLine.class);
       aInvoiceLine.setOwner (ret);
@@ -89,7 +89,7 @@ public final class ProcInvoiceMicroTypeConverter implements IMicroTypeConverter
     }
     ret.setInvoiceLines (aInvoiceLines);
     final List <ProcInvoiceAttachment> aAttachments = new ArrayList <ProcInvoiceAttachment> ();
-    for (final IMicroElement eAttachment : aElement.getChildElements (ELEMENT_ATTACHMENT))
+    for (final IMicroElement eAttachment : aElement.getAllChildElements (ELEMENT_ATTACHMENT))
     {
       final ProcInvoiceAttachment aAttachment = MicroTypeConverter.convertToNative (eAttachment,
                                                                                     ProcInvoiceAttachment.class);

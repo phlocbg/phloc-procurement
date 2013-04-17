@@ -85,7 +85,7 @@ public final class ProcOrderMicroTypeConverter implements IMicroTypeConverter
     ret.setDeliveryEndDate (aElement.getAttributeWithConversion (ATTR_DELIVERY_END_DATE, LocalDate.class));
     ret.setIncoterm (EIncoterm.getFromIDOrNull (aElement.getAttribute (ATTR_INCOTERM)));
     final List <ProcOrderItem> aOrderItems = new ArrayList <ProcOrderItem> ();
-    for (final IMicroElement eOrderItem : aElement.getChildElements (ELEMENT_ITEM))
+    for (final IMicroElement eOrderItem : aElement.getAllChildElements (ELEMENT_ITEM))
     {
       final ProcOrderItem aOrderItem = MicroTypeConverter.convertToNative (eOrderItem, ProcOrderItem.class);
       aOrderItem.setOwner (ret);
@@ -93,7 +93,7 @@ public final class ProcOrderMicroTypeConverter implements IMicroTypeConverter
     }
     ret.setOrderItems (aOrderItems);
     final List <ProcOrderAttachment> aAttachments = new ArrayList <ProcOrderAttachment> ();
-    for (final IMicroElement eAttachment : aElement.getChildElements (ELEMENT_ATTACHMENT))
+    for (final IMicroElement eAttachment : aElement.getAllChildElements (ELEMENT_ATTACHMENT))
     {
       final ProcOrderAttachment aAttachment = MicroTypeConverter.convertToNative (eAttachment,
                                                                                   ProcOrderAttachment.class);
