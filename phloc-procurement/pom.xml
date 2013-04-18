@@ -24,8 +24,8 @@
   
   <scm>
     <url>http://code.google.com/p/phloc-procurement/source/browse/</url>
-    <connection>scm:svn:http://phloc-procurement.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://phloc-procurement.googlecode.com/svn/trunk</developerConnection>
+    <connection>scm:svn:http://phloc-procurement.googlecode.com/svn/trunk/phloc-procurement</connection>
+    <developerConnection>scm:svn:https://phloc-procurement.googlecode.com/svn/trunk/phloc-procurement</developerConnection>
   </scm>
 
   <organization>
