@@ -30,7 +30,7 @@ import com.phloc.commons.name.IHasDisplayText;
  * Possible response codes.<br>
  * See Technical documentation 6.3
  * 
- * @author philip
+ * @author Philip Helger
  */
 public enum EResponseCode implements IResponseCode
 {

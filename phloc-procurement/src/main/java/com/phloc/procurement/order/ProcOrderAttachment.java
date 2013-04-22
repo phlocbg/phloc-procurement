@@ -41,7 +41,7 @@ import com.phloc.procurement.domain.CProcLengthConstraints;
 /**
  * Represents a single order attachment.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "orderattach")

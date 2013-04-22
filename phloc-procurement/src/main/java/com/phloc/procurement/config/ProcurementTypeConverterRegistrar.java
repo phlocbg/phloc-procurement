@@ -31,7 +31,7 @@ import com.phloc.procurement.idscheme.EntityIDSchemeManager;
  * This is the SPI implementation of the type converter registry for this
  * project.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @IsSPIImplementation
 public class ProcurementTypeConverterRegistrar implements ITypeConverterRegistrarSPI

@@ -28,7 +28,7 @@ import com.phloc.procurement.idscheme.IEntityIDScheme;
 /**
  * Interface for an abstract party domain object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcParty extends IProcDeletableObject, IHasCountry
 {

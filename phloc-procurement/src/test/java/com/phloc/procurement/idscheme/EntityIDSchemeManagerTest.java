@@ -32,7 +32,7 @@ import com.phloc.scopes.mock.ScopeTestRule;
 /**
  * Test class for class {@link EntityIDSchemeManager}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class EntityIDSchemeManagerTest
 {

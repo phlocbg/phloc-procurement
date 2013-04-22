@@ -27,7 +27,7 @@ import com.phloc.db.jpa.IEntityManagerProvider;
  * Abstract base class for entity managers. Provides the
  * {@link #doInTransaction(Runnable)} method and other sanity methods.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public abstract class AbstractProcManager extends AbstractJPAEnabledManager
 {

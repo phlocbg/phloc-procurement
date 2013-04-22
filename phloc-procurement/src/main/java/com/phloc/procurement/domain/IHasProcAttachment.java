@@ -24,7 +24,7 @@ import javax.annotation.Nonnull;
 /**
  * Base interface for all objects having attachments.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IHasProcAttachment
 {

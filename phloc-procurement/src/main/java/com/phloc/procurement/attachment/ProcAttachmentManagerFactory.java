@@ -28,7 +28,7 @@ import com.phloc.commons.exceptions.InitializationException;
  * Use this class to retrieve the attachment manager. It uses the storage
  * handler loaded by SPI.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Immutable
 public final class ProcAttachmentManagerFactory

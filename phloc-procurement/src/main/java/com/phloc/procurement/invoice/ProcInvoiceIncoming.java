@@ -46,7 +46,7 @@ import com.phloc.procurement.party.ProcSupplier;
 /**
  * Domain object for an incoming invoice.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "invoices_in")

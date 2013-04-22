@@ -36,7 +36,7 @@ import com.phloc.procurement.domain.CProcLengthConstraints;
 /**
  * Domain object for the master data.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "masterdata")

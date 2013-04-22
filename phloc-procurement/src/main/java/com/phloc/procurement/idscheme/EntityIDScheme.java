@@ -34,7 +34,7 @@ import com.phloc.validation.validator.IStringValidator;
 /**
  * Default implementation of the {@link IEntityIDScheme} interface.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Immutable
 public final class EntityIDScheme implements IEntityIDScheme

@@ -41,7 +41,7 @@ import com.phloc.procurement.party.ProcCustomer;
 /**
  * Domain object for an outgoing invoice.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "invoices_out")

@@ -24,7 +24,7 @@ import com.phloc.procurement.domain.IProcObject;
 /**
  * Read-only interface for a single order attachment
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOrderAttachment extends IProcObject
 {

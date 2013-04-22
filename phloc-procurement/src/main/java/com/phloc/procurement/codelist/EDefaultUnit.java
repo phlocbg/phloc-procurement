@@ -30,7 +30,7 @@ import com.phloc.commons.name.IHasDisplayText;
  * Possible units of measurement.<br>
  * See Technical documentation 6.6
  * 
- * @author philip
+ * @author Philip Helger
  */
 public enum EDefaultUnit implements IDefaultUnit
 {

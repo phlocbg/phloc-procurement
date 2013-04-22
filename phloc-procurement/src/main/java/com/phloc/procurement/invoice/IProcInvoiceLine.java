@@ -29,7 +29,7 @@ import com.phloc.procurement.domain.IProcObject;
 /**
  * Read-only interface for a single invoice line
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcInvoiceLine extends IProcObject, IHasDescription
 {

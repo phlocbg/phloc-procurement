@@ -39,7 +39,7 @@ import com.phloc.ubl.UBL20DocumentMarshaller;
 /**
  * Test class for class {@link UBL20InvoiceSerializer}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class UBL20InvoiceSerializerTest extends AbstractExchangeTestCase
 {

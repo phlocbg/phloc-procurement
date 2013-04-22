@@ -27,7 +27,7 @@ import com.phloc.web.fileupload.IFileItem;
 /**
  * A special attachment for upload of files. It is based on a {@link IFileItem}
  * 
- * @author philip
+ * @author Philip Helger
  */
 public class ProcFileItemAttachment extends ProcResourceAttachment
 {

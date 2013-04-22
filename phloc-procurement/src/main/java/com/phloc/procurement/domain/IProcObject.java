@@ -22,7 +22,7 @@ import com.phloc.commons.id.IHasSimpleIntID;
 /**
  * Base interface for a procurement entity.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcObject extends IHasSimpleIntID
 {

@@ -41,7 +41,7 @@ import com.phloc.commons.string.ToStringGenerator;
 /**
  * The domain object for a customer.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "customer")

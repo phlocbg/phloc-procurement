@@ -27,7 +27,7 @@ import com.phloc.procurement.party.IProcSupplier;
  * Interface for an outgoing order. This is for the use case where the current
  * entity is the buyer (buying goods and services from suppliers).
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOrderOutgoing extends IHasProcOrder, IProcObjectWithState, IProcObjectWithClient
 {

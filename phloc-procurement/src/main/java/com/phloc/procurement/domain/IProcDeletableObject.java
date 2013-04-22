@@ -20,7 +20,7 @@ package com.phloc.procurement.domain;
 /**
  * Base interface for a deletable procurement object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcDeletableObject extends IProcObject
 {

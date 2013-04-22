@@ -30,7 +30,7 @@ import com.phloc.commons.string.StringHelper;
 /**
  * Test class for class {@link ECommodityScheme}.
  *
- * @author philip
+ * @author Philip Helger
  */
 public final class ECommoditySchemeTest
 {

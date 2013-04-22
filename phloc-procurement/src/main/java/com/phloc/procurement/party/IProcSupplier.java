@@ -22,7 +22,7 @@ import com.phloc.procurement.domain.IProcObjectWithClient;
 /**
  * Interface for a supplier domain object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcSupplier extends IProcParty, IProcObjectWithClient
 {

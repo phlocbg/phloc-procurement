@@ -31,7 +31,7 @@ import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 /**
  * Test class for class {@link ProcInvoice}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class ProcInvoiceTest extends AbstractExchangeTestCase
 {

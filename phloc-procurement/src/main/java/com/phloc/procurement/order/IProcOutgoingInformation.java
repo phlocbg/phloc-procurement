@@ -24,7 +24,7 @@ import org.joda.time.DateTime;
 /**
  * Base interface for outgoing objects.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOutgoingInformation
 {

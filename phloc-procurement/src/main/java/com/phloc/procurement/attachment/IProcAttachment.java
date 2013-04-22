@@ -28,7 +28,7 @@ import com.phloc.commons.mime.IMimeType;
 /**
  * Describes a single attachment to a procurement document.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcAttachment extends IInputStreamProvider, IHasID <String>
 {

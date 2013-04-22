@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 /**
  * Interface for an object containing an invoice.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IHasProcInvoice
 {

@@ -24,7 +24,7 @@ import com.phloc.procurement.domain.IProcObjectWithClient;
 /**
  * Interface for a master data domain object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcMasterData extends IProcParty, IProcObjectWithClient
 {

@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 /**
  * Resolve attachments by ID.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcAttachmentResolver
 {

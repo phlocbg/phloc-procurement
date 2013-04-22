@@ -29,7 +29,7 @@ import com.phloc.validation.validator.IStringValidator;
  * display text, a locale independent short name and a validator to validate
  * values.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IEntityIDScheme extends IHasID <String>, IHasDisplayText, IStringValidator
 {
