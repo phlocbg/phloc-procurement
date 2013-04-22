@@ -75,7 +75,7 @@ import com.phloc.procurement.party.ProcSupplier;
 /**
  * Read and write procurement domain objects from and to XML - quick and dirty.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Immutable
 public final class SimpleProcSerializer

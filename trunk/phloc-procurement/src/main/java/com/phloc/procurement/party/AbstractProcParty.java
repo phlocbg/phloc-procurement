@@ -46,7 +46,7 @@ import com.phloc.procurement.idscheme.JPAEntityIDSchemeConverter;
 /**
  * Base class for customer, supplier and master data domain objects.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @MappedSuperclass
 @Access (value = AccessType.PROPERTY)

@@ -51,7 +51,7 @@ import com.phloc.scopes.mock.ScopeTestRule;
 /**
  * Abstract test class for exchanging objects.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public abstract class AbstractExchangeTestCase
 {

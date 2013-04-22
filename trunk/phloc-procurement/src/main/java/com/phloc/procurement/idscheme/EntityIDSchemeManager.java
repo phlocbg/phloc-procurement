@@ -44,7 +44,7 @@ import com.phloc.validation.validator.string.StringRegExValidator;
 /**
  * Manages all available entity ID schemes.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @ThreadSafe
 public final class EntityIDSchemeManager extends GlobalSingleton

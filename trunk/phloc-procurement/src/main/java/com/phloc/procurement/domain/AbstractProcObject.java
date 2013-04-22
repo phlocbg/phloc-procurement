@@ -30,7 +30,7 @@ import com.phloc.commons.string.ToStringGenerator;
 /**
  * Base class for Ebiz domain objects.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @MappedSuperclass
 @Access (value = AccessType.PROPERTY)

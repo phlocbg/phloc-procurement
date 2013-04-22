@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 /**
  * Base interface for objects with a state
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcObjectWithState extends IProcObject
 {

@@ -58,7 +58,7 @@ import com.phloc.datetime.PDTFactory;
 /**
  * Abstract class for a file-based attachment storage handler.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @ThreadSafe
 public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implements IProcAttachmentStorageHandlerSPI

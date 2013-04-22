@@ -57,7 +57,7 @@ import com.phloc.procurement.domain.CProcLengthConstraints;
 /**
  * Domain object for an order.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "orders")

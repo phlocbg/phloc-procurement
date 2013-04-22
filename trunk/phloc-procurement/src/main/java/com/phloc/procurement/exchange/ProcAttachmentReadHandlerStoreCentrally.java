@@ -26,7 +26,7 @@ import com.phloc.procurement.attachment.ProcAttachmentManagerFactory;
  * The attachment reading implementation that stores attachments in the central
  * attachment manager.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class ProcAttachmentReadHandlerStoreCentrally implements IProcAttachmentReadHandler
 {

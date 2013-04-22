@@ -31,7 +31,7 @@ import com.phloc.commons.state.EChange;
 /**
  * This class handles attachments references e.g. by orders and invoices.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @ThreadSafe
 public final class ProcAttachmentManager implements IProcAttachmentResolver

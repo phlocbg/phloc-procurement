@@ -33,7 +33,7 @@ import com.phloc.validation.validator.string.StringRegExValidator;
  * Commodity scheme.<br>
  * See Technical documentation 6.8
  * 
- * @author philip
+ * @author Philip Helger
  */
 public enum ECommodityScheme implements ICommodityScheme
 {

@@ -38,7 +38,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  * In-memory implementation of the {@link IProcAttachment} interface. The data
  * is stored in a byte array.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class ProcInMemoryAttachment extends AbstractProcAttachment
 {

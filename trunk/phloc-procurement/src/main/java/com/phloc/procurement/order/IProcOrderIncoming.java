@@ -29,7 +29,7 @@ import com.phloc.procurement.party.IProcCustomer;
  * Interface for an incoming order. This is for the use case where the current
  * entity is the seller (selling goods and services to customers).
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOrderIncoming extends IHasProcOrder, IProcObjectWithState, IProcObjectWithClient
 {

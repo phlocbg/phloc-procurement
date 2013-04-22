@@ -24,7 +24,7 @@ import com.phloc.procurement.attachment.IProcAttachment;
 /**
  * Defines how to handle serialized attachments.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcAttachmentReadHandler
 {

@@ -29,7 +29,7 @@ import com.phloc.datetime.PDTFactory;
 /**
  * Test class for class {@link ProcResourceAttachment}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class ProcResourceAttachmentTest
 {

@@ -31,7 +31,7 @@ import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 /**
  * Test class for class {@link ProcOrder}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class ProcOrderTest extends AbstractExchangeTestCase
 {

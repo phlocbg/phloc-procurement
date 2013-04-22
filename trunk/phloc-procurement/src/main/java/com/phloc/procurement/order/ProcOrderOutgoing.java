@@ -41,7 +41,7 @@ import com.phloc.procurement.party.ProcSupplier;
 /**
  * Domain object for an outgoing order.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "orders_out")

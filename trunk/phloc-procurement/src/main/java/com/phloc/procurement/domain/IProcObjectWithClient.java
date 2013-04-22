@@ -22,7 +22,7 @@ import javax.annotation.Nonnegative;
 /**
  * Base interface for objects with a client (Mandant)
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcObjectWithClient extends IProcObject
 {

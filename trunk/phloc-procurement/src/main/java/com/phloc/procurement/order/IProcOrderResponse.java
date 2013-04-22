@@ -22,7 +22,7 @@ import com.phloc.procurement.domain.IProcDeletableObject;
 /**
  * Interface for an order response domain object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOrderResponse extends IProcDeletableObject
 {

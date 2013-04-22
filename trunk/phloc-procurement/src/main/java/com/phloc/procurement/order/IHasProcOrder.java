@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 /**
  * Interface for an object containing an order.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IHasProcOrder
 {

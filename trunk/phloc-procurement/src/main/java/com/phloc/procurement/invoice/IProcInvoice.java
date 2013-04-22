@@ -31,7 +31,7 @@ import com.phloc.procurement.domain.IProcDeletableObject;
  * Base interface for an invoice domain object. This interface does not state
  * anything about the direction of the invoice.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcInvoice extends IProcDeletableObject, IHasProcAttachment
 {

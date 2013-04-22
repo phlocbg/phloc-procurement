@@ -32,7 +32,7 @@ import com.phloc.commons.string.ToStringGenerator;
 /**
  * The domain object for the supplier.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "supplier")

@@ -47,7 +47,7 @@ import com.phloc.procurement.party.ProcSupplierMicroTypeConverter;
  * This is the SPI implementation of the micro type converter registry for this
  * project.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @IsSPIImplementation
 public class ProcurementMicroTypeConverterRegistrar implements IMicroTypeConverterRegistrarSPI

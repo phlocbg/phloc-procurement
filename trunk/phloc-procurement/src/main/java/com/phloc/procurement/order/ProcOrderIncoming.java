@@ -46,7 +46,7 @@ import com.phloc.procurement.party.ProcCustomer;
 /**
  * Domain object for an incoming order.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @Entity
 @Table (name = "orders_in")

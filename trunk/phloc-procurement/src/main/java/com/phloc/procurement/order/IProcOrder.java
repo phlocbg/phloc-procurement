@@ -32,7 +32,7 @@ import com.phloc.procurement.domain.IProcDeletableObject;
  * Interface for an order domain object. This interface does not state anything
  * about the direction of the order (incoming or outgoing).
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcOrder extends IProcDeletableObject, IHasProcAttachment
 {

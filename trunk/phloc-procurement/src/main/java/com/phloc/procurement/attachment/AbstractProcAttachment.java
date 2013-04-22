@@ -34,7 +34,7 @@ import com.phloc.commons.string.ToStringGenerator;
  * Abstract implementation of the {@link IProcAttachment} interface that is
  * independent of the underlying data storage.
  * 
- * @author philip
+ * @author Philip Helger
  */
 @NotThreadSafe
 public abstract class AbstractProcAttachment implements IProcAttachment

@@ -31,7 +31,7 @@ import com.phloc.commons.name.IHasDisplayText;
  * Contains all the different states as an enum! Never delete an item, as the
  * index of an item is stored in the DB!
  * 
- * @author philip
+ * @author Philip Helger
  */
 public enum EProcState implements IHasID <String>, IHasDisplayText
 {

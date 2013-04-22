@@ -38,7 +38,7 @@ import com.phloc.commons.string.ToStringGenerator;
 /**
  * This class references a single attachment that can be found on disk.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public class ProcResourceAttachment extends AbstractProcAttachment
 {

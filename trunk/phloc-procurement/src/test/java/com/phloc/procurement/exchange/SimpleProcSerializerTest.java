@@ -32,7 +32,7 @@ import com.phloc.procurement.party.ProcSupplier;
 /**
  * Test class for class {@link SimpleProcSerializer}.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public final class SimpleProcSerializerTest extends AbstractExchangeTestCase
 {

@@ -29,7 +29,7 @@ import com.phloc.procurement.party.IProcSupplier;
  * Interface for an incoming invoice. This is for the use case where the current
  * entity is the buyer (buying goods and services from suppliers).
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcInvoiceIncoming extends IHasProcInvoice, IProcObjectWithState, IProcObjectWithClient
 {

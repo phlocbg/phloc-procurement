@@ -26,7 +26,7 @@ import com.phloc.procurement.domain.IProcObjectWithClient;
 /**
  * Interface for a customer domain object.
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IProcCustomer extends IProcParty, IProcObjectWithClient
 {

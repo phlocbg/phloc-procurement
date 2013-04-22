@@ -21,7 +21,7 @@ package com.phloc.procurement.exchange.ubl;
  * Customization of the UBL "Common Aggregate Components" (namespace prefix
  * CAC).
  * 
- * @author philip
+ * @author Philip Helger
  */
 public interface IUBLCACCustomization
 {
