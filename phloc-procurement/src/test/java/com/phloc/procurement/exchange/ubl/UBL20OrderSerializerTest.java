@@ -34,7 +34,7 @@ import com.phloc.commons.xml.serialize.XMLWriterSettings;
 import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 import com.phloc.procurement.order.ProcOrderOutgoing;
 import com.phloc.procurement.party.ProcMasterData;
-import com.phloc.ubl.UBL20DocumentMarshaller;
+import com.phloc.ubl.UBL20Writer;
 
 /**
  * Test class for class {@link UBL20OrderSerializer}.
@@ -60,7 +60,7 @@ public final class UBL20OrderSerializerTest extends AbstractExchangeTestCase
     assertNotNull (aUBLOrder);
 
     // Serialize to XML
-    final Document aUBLDoc = UBL20DocumentMarshaller.writeOrder (aUBLOrder);
+    final Document aUBLDoc = UBL20Writer.writeOrder (aUBLOrder);
     assertNotNull (aUBLDoc);
 
     SimpleFileIO.writeFile (new File ("test-order.xml"),
