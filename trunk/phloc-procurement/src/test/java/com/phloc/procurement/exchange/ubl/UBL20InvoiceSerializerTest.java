@@ -34,7 +34,7 @@ import com.phloc.commons.xml.serialize.XMLWriterSettings;
 import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 import com.phloc.procurement.invoice.ProcInvoiceOutgoing;
 import com.phloc.procurement.party.ProcMasterData;
-import com.phloc.ubl.UBL20DocumentMarshaller;
+import com.phloc.ubl.UBL20Writer;
 
 /**
  * Test class for class {@link UBL20InvoiceSerializer}.
@@ -60,7 +60,7 @@ public final class UBL20InvoiceSerializerTest extends AbstractExchangeTestCase
     assertNotNull (aUBLInvoice);
 
     // Serialize to XML
-    final Document aUBLDoc = UBL20DocumentMarshaller.writeInvoice (aUBLInvoice);
+    final Document aUBLDoc = UBL20Writer.writeInvoice (aUBLInvoice);
     assertNotNull (aUBLDoc);
 
     SimpleFileIO.writeFile (new File ("test-invoice.xml"),
