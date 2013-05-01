@@ -25,12 +25,8 @@ import java.util.Locale;
 import oasis.names.specification.ubl.schema.xsd.invoice_2.InvoiceType;
 
 import org.junit.Test;
-import org.w3c.dom.Document;
 
-import com.phloc.commons.io.file.SimpleFileIO;
 import com.phloc.commons.locale.LocaleCache;
-import com.phloc.commons.xml.serialize.XMLWriter;
-import com.phloc.commons.xml.serialize.XMLWriterSettings;
 import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 import com.phloc.procurement.invoice.ProcInvoiceOutgoing;
 import com.phloc.procurement.party.ProcMasterData;
@@ -60,11 +56,6 @@ public final class UBL20InvoiceSerializerTest extends AbstractExchangeTestCase
     assertNotNull (aUBLInvoice);
 
     // Serialize to XML
-    final Document aUBLDoc = UBL20Writer.writeInvoice (aUBLInvoice);
-    assertNotNull (aUBLDoc);
-
-    SimpleFileIO.writeFile (new File ("test-invoice.xml"),
-                            XMLWriter.getXMLString (aUBLDoc),
-                            XMLWriterSettings.DEFAULT_XML_CHARSET_OBJ);
+    UBL20Writer.writeInvoice (aUBLInvoice, new File ("target/test-invoice.xml"));
   }
 }

@@ -25,12 +25,8 @@ import java.util.Locale;
 import oasis.names.specification.ubl.schema.xsd.order_2.OrderType;
 
 import org.junit.Test;
-import org.w3c.dom.Document;
 
-import com.phloc.commons.io.file.SimpleFileIO;
 import com.phloc.commons.locale.LocaleCache;
-import com.phloc.commons.xml.serialize.XMLWriter;
-import com.phloc.commons.xml.serialize.XMLWriterSettings;
 import com.phloc.procurement.exchange.AbstractExchangeTestCase;
 import com.phloc.procurement.order.ProcOrderOutgoing;
 import com.phloc.procurement.party.ProcMasterData;
@@ -60,11 +56,6 @@ public final class UBL20OrderSerializerTest extends AbstractExchangeTestCase
     assertNotNull (aUBLOrder);
 
     // Serialize to XML
-    final Document aUBLDoc = UBL20Writer.writeOrder (aUBLOrder);
-    assertNotNull (aUBLDoc);
-
-    SimpleFileIO.writeFile (new File ("test-order.xml"),
-                            XMLWriter.getXMLString (aUBLDoc),
-                            XMLWriterSettings.DEFAULT_XML_CHARSET_OBJ);
+    UBL20Writer.writeOrder (aUBLOrder, new File ("target/test-order.xml"));
   }
 }
