@@ -18,10 +18,9 @@
 package com.phloc.procurement.db;
 
 import javax.annotation.Nonnull;
-import javax.persistence.EntityManager;
 
-import com.phloc.db.jpa.AbstractJPAEnabledManager;
 import com.phloc.db.jpa.IEntityManagerProvider;
+import com.phloc.db.jpa.JPAEnabledManager;
 
 /**
  * Abstract base class for entity managers. Provides the
@@ -29,20 +28,10 @@ import com.phloc.db.jpa.IEntityManagerProvider;
  * 
  * @author Philip Helger
  */
-public abstract class AbstractProcManager extends AbstractJPAEnabledManager
+public abstract class AbstractProcManager extends JPAEnabledManager
 {
-  private final IEntityManagerProvider m_aHasEntityProvider;
-
   protected AbstractProcManager (@Nonnull final IEntityManagerProvider aEntityMgrProvider)
   {
-    if (aEntityMgrProvider == null)
-      throw new NullPointerException ("hasEntityMgr");
-    m_aHasEntityProvider = aEntityMgrProvider;
-  }
-
-  @Override
-  protected final EntityManager getEntityManager ()
-  {
-    return m_aHasEntityProvider.getEntityManager ();
+    super (aEntityMgrProvider);
   }
 }

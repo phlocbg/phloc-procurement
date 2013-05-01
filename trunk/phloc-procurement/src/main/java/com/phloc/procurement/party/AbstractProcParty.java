@@ -36,7 +36,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
-import com.phloc.db.jpa.converter.JPALocaleConverter;
+import com.phloc.db.jpa.eclipselink.converter.JPALocaleConverter;
 import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.procurement.domain.AbstractProcDeletableObject;
 import com.phloc.procurement.domain.CProcLengthConstraints;

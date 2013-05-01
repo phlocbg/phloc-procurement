@@ -45,7 +45,7 @@ import com.phloc.commons.equals.EqualsUtils;
 import com.phloc.commons.hash.HashCodeGenerator;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.ToStringGenerator;
-import com.phloc.db.jpa.converter.JPAJodaLocalDateConverter;
+import com.phloc.db.jpa.eclipselink.converter.JPAJodaLocalDateConverter;
 import com.phloc.masterdata.MasterdataUtils;
 import com.phloc.masterdata.currency.CurrencyValue;
 import com.phloc.masterdata.currency.ICurrencyValue;
