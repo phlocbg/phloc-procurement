@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.idscheme.IEntityIDScheme;
 import com.phloc.procurement.party.IProcCustomer;
@@ -43,7 +43,7 @@ public class ProcCustomerManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveCustomer (@Nonnull final IProcCustomer aCustomer)
+  public final ISuccessIndicator saveCustomer (@Nonnull final IProcCustomer aCustomer)
   {
     return doInTransaction (new Runnable ()
     {
@@ -56,7 +56,7 @@ public class ProcCustomerManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess deleteCustomer (@Nonnull final ProcCustomer aCustomer)
+  public final ISuccessIndicator deleteCustomer (@Nonnull final ProcCustomer aCustomer)
   {
     return doInTransaction (new Runnable ()
     {
@@ -69,7 +69,7 @@ public class ProcCustomerManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess undeleteCustomer (@Nonnull final ProcCustomer aCustomer)
+  public final ISuccessIndicator undeleteCustomer (@Nonnull final ProcCustomer aCustomer)
   {
     return doInTransaction (new Runnable ()
     {

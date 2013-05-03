@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.party.ProcMasterData;
 
@@ -40,7 +40,7 @@ public class ProcMasterDataManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveMasterData (@Nonnull final ProcMasterData aMasterData)
+  public final ISuccessIndicator saveMasterData (@Nonnull final ProcMasterData aMasterData)
   {
     return doInTransaction (new Runnable ()
     {

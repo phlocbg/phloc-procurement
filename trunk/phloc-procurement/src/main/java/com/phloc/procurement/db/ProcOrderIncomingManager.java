@@ -29,7 +29,7 @@ import javax.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.domain.EProcState;
 import com.phloc.procurement.order.ProcOrderIncoming;
@@ -44,7 +44,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveOrder (@Nonnull final ProcOrderIncoming aOrder)
+  public final ISuccessIndicator saveOrder (@Nonnull final ProcOrderIncoming aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -57,7 +57,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess deleteOrder (@Nonnull final ProcOrderIncoming aOrder)
+  public final ISuccessIndicator deleteOrder (@Nonnull final ProcOrderIncoming aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -70,7 +70,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess acceptOrder (@Nonnull final ProcOrderIncoming aOrder)
+  public final ISuccessIndicator acceptOrder (@Nonnull final ProcOrderIncoming aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -84,7 +84,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess rejectOrder (@Nonnull final ProcOrderIncoming aOrder)
+  public final ISuccessIndicator rejectOrder (@Nonnull final ProcOrderIncoming aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -98,7 +98,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess undeleteOrder (@Nonnull final ProcOrderIncoming aOrder)
+  public final ISuccessIndicator undeleteOrder (@Nonnull final ProcOrderIncoming aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -111,7 +111,7 @@ public class ProcOrderIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess changeOrderState (final ProcOrderIncoming aOrder, final EProcState eNewState)
+  public final ISuccessIndicator changeOrderState (final ProcOrderIncoming aOrder, final EProcState eNewState)
   {
     return doInTransaction (new Runnable ()
     {

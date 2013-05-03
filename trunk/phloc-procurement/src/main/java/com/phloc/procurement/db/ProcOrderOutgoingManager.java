@@ -29,7 +29,7 @@ import javax.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.commons.string.StringHelper;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.domain.EProcState;
@@ -45,7 +45,7 @@ public class ProcOrderOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveOrder (@Nonnull final ProcOrderOutgoing aOrder)
+  public final ISuccessIndicator saveOrder (@Nonnull final ProcOrderOutgoing aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -58,7 +58,7 @@ public class ProcOrderOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess deleteOrder (@Nonnull final ProcOrderOutgoing aOrder)
+  public final ISuccessIndicator deleteOrder (@Nonnull final ProcOrderOutgoing aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -71,7 +71,7 @@ public class ProcOrderOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess undeleteOrder (@Nonnull final ProcOrderOutgoing aOrder)
+  public final ISuccessIndicator undeleteOrder (@Nonnull final ProcOrderOutgoing aOrder)
   {
     return doInTransaction (new Runnable ()
     {
@@ -84,7 +84,7 @@ public class ProcOrderOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess changeOrderState (final ProcOrderOutgoing aOrder, final EProcState eNewState)
+  public final ISuccessIndicator changeOrderState (final ProcOrderOutgoing aOrder, final EProcState eNewState)
   {
     return doInTransaction (new Runnable ()
     {
