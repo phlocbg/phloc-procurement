@@ -29,7 +29,7 @@ import javax.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.commons.string.StringHelper;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.domain.EProcState;
@@ -45,7 +45,7 @@ public class ProcInvoiceOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
+  public final ISuccessIndicator saveInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -58,7 +58,7 @@ public class ProcInvoiceOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess deleteInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
+  public final ISuccessIndicator deleteInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -71,7 +71,7 @@ public class ProcInvoiceOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess undeleteInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
+  public final ISuccessIndicator undeleteInvoice (@Nonnull final ProcInvoiceOutgoing aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -84,7 +84,7 @@ public class ProcInvoiceOutgoingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess changeInvoiceState (final ProcInvoiceOutgoing aInvoice, final EProcState eNewState)
+  public final ISuccessIndicator changeInvoiceState (final ProcInvoiceOutgoing aInvoice, final EProcState eNewState)
   {
     return doInTransaction (new Runnable ()
     {

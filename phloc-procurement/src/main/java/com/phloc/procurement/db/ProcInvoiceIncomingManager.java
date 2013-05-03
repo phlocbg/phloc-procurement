@@ -29,7 +29,7 @@ import javax.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.phloc.commons.state.ESuccess;
+import com.phloc.commons.state.ISuccessIndicator;
 import com.phloc.db.jpa.IEntityManagerProvider;
 import com.phloc.procurement.domain.EProcState;
 import com.phloc.procurement.invoice.ProcInvoiceIncoming;
@@ -44,7 +44,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess saveInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
+  public final ISuccessIndicator saveInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -57,7 +57,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess deleteInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
+  public final ISuccessIndicator deleteInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -70,7 +70,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess undeleteInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
+  public final ISuccessIndicator undeleteInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -83,7 +83,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess acceptInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
+  public final ISuccessIndicator acceptInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -97,7 +97,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess rejectInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
+  public final ISuccessIndicator rejectInvoice (@Nonnull final ProcInvoiceIncoming aInvoice)
   {
     return doInTransaction (new Runnable ()
     {
@@ -111,7 +111,7 @@ public class ProcInvoiceIncomingManager extends AbstractProcManager
   }
 
   @Nonnull
-  public final ESuccess changeInvoiceState (final ProcInvoiceIncoming aInvoice, final EProcState eNewState)
+  public final ISuccessIndicator changeInvoiceState (final ProcInvoiceIncoming aInvoice, final EProcState eNewState)
   {
     return doInTransaction (new Runnable ()
     {
