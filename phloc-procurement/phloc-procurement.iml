@@ -28,7 +28,7 @@
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.phloc:phloc-masterdata:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: net.sf.trove4j:trove4j:3.0.3" level="project" />
-    <orderEntry type="library" name="Maven: com.phloc:phloc-ubl:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.phloc:phloc-ubl:3.1.5" level="project" />
     <orderEntry type="library" name="Maven: com.phloc:phloc-ubl20:3.1.3" level="project" />
     <orderEntry type="library" name="Maven: com.phloc:phloc-ubl20-codelists:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.phloc:phloc-web:5.0.6" level="project" />
