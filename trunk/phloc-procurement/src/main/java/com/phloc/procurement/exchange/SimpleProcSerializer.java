@@ -34,7 +34,7 @@ import com.phloc.commons.microdom.convert.MicroTypeConverter;
 import com.phloc.commons.microdom.impl.MicroElement;
 import com.phloc.commons.microdom.utils.MicroUtils;
 import com.phloc.commons.mime.IMimeType;
-import com.phloc.commons.mime.MimeType;
+import com.phloc.commons.mime.MimeTypeParser;
 import com.phloc.commons.string.StringParser;
 import com.phloc.masterdata.price.ReadonlyPrice;
 import com.phloc.masterdata.tax.ETaxCategoryUN5305;
@@ -192,7 +192,7 @@ public final class SimpleProcSerializer
   private static IProcAttachment _readAttachment (@Nonnull final IMicroElement eAttachment)
   {
     final String sTitle = eAttachment.getAttribute ("title");
-    final IMimeType aMIMEType = MimeType.parseFromStringWithoutEncoding (eAttachment.getAttribute ("mimetype"));
+    final IMimeType aMIMEType = MimeTypeParser.parseMimeType (eAttachment.getAttribute ("mimetype"));
     final byte [] aData = Base64Helper.safeDecode (eAttachment.getTextContent ());
     return new ProcInMemoryAttachment (GlobalIDFactory.getNewPersistentStringID (), sTitle, aMIMEType, aData);
   }

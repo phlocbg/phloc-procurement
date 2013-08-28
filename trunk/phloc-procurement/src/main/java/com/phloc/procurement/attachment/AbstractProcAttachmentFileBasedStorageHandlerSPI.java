@@ -49,7 +49,7 @@ import com.phloc.commons.microdom.reader.XMLListHandler;
 import com.phloc.commons.microdom.serialize.MicroReader;
 import com.phloc.commons.microdom.serialize.MicroWriter;
 import com.phloc.commons.mime.IMimeType;
-import com.phloc.commons.mime.MimeType;
+import com.phloc.commons.mime.MimeTypeParser;
 import com.phloc.commons.state.EChange;
 import com.phloc.commons.string.StringHelper;
 import com.phloc.commons.string.StringParser;
@@ -153,7 +153,7 @@ public abstract class AbstractProcAttachmentFileBasedStorageHandlerSPI implement
     final IMicroElement eMimeType = eRoot.getFirstChildElement (ELEMENT_MIMETYPE);
     IMimeType aMimeType = null;
     if (eMimeType != null)
-      aMimeType = MimeType.parseFromStringWithoutEncoding (eMimeType.getTextContent ());
+      aMimeType = MimeTypeParser.parseMimeType (eMimeType.getTextContent ());
     return new ProcResourceAttachment (sAttachmentID,
                                        eTitle.getTextContent (),
                                        aMimeType,
