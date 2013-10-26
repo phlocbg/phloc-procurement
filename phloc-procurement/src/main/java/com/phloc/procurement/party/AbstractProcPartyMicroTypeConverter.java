@@ -49,7 +49,6 @@ public abstract class AbstractProcPartyMicroTypeConverter implements IMicroTypeC
   private static final String ATTR_BIC = "bic";
   private static final String ATTR_IBAN = "iban";
 
-  @Nonnull
   protected final void convertToMicroElementPartial (@Nonnull final AbstractProcParty aValue,
                                                      @Nonnull final IMicroElement aElement)
   {
@@ -87,7 +86,6 @@ public abstract class AbstractProcPartyMicroTypeConverter implements IMicroTypeC
       aElement.setAttribute (ATTR_IBAN, aValue.getIBAN ());
   }
 
-  @Nonnull
   protected final void convertToNativePartial (@Nonnull final AbstractProcParty aValue,
                                                @Nonnull final IMicroElement aElement)
   {
